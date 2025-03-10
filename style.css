@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Style général pour le corps de la page */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #F9F5F0;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    width: 100%;
+    gap: 100px;
+}
+
+section {
+    width: 100%;
+}
+
+#texte-intro{
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    font-size: 23px;
+    align-items: center;
+}
+
+
+.barre-horizontale {
+    width: 200px;
+    height: 4px;
+    background-color: #545470;
+}
+
+.button-explorer {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: black;
+    /* Couleur du texte */
+    background-color: rgba(255, 255, 255, 0.6);
+    /* Fond semi-transparent */
+    font-family: Arial, sans-serif;
+    /* Police de caractères */
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Effet au survol */
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    /* Espace entre les liens */
+    padding: 20px 0;
+}
+
+/* Styles pour chaque lien du menu */
+.menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
