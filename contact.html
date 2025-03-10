@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nous Contacter</title>
+        <meta name="description" content="Comment nous contacter et ou nous trouver">
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <nav class="nav">   
+                <li><a href="apropos.html">A propos</a></li>
+                <li><a href="nosservices.html">Nos services</a</li>
+                <li><a href="nosrealisations.html">Nos Réalisations</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="#contact">Nous contacter</a></li>
+                <li><a href="nousconnaitre.html">Nous connaître</a></li>
+            </nav>
+        </header>
+        <br>
+        <main>
+            <section>
+                <div class="nouscontacter" id="#contact">
+                    <h1 class="nouscontacter">Nous contacter</h1>
+                    <img src="images/fleur.jpg" alt="fleur" class="element" width=1250px height=500px flex-shrink=0 loading="lazy">
+                </div>
+
+                <div class="adresse">
+                    <h2>Nous trouver</h2>
+                    <p>102 Chemin du Génie, 06000 Nice</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.629865160428!2d7.218366074670688!3d43.7390154468785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdce4b65e8d001%3A0x44d604e781a67824!2s102%20Chem.%20du%20G%C3%A9nie%2C%2006000%20Nice!5e0!3m2!1sfr!2sfr!4v1741612984455!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+                <br>
+            <section>
+                <div class="gauche">
+                    <div class="container">
+                        <div class="form_area">
+                            <form action="#" onsubmit="affiche_information(event)" name="information">
+                                <div class="form_group">
+                                    <input id="nom"  class="form_style" type="text" placeholder="Nom">
+                                </div>
+                                <div class="form_group">
+                                    <input id="prenom" class="form_style" type="text" placeholder="Prénom">
+                                </div>
+                                <div class="form_group">
+                                    <input id="mail" class="form_style" type="email" placeholder="Email">
+                                </div>
+                                <button type="submit" class="btn">S'inscrire</button>
+                            </form>
+                            <script>
+                                
+                                   function affiche_information(event) {
+                                    event.preventDefault();
+                                   // variables
+                                     let first_name = document.getElementById("nom").value;
+                                     let last_name = document.getElementById("prenom").value;
+                                     let email = document.getElementById("mail").value;
+                                     
+                                     //affichage
+                                     alert("Voici les informations que nous avons récupéré: \n\nNom: "+first_name+ "\nPrénom: " +last_name+ "\nEmail: " +email+ "\n\nMerci de votre inscription");
+                                   }
+                                </script>
+                    </div>
+                </div>
+                <div class="droite">
+                    <img src="images/herbe.webp" class="herbe" alt="herbe" width="286" height="286" loading="lazy">
+                </div>
+                
+            </section>
+            <footer>
+                <div class="bas">
+                    <!--Soit mettre un fond vert soit on ajoute l'image au css avec :
+                    .bottom-image {
+  width: 100%;
+  max-width: 1446px;
+  height: 325px;
+  background-image: url('jardinbascontact');
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}-->
+                    <p>Tel : 07.88.76.05.71</p>
+                    <p>Email : contact@lucasjardins.com</p>
+                    <a href="https://www.instagram.com/lucasjardins06/" target="_blank"><img src="insta.png" class="insta" alt="Instagram" width="71" height="71" loading="lazy"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100089258752223" target="_blank"><img src="facebook.png" class="facebook" alt="Facebook" width="71" height="71" loading="lazy"></a>
+                </div>
+            </footer>
+        </main>
