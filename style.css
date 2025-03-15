@@ -75,7 +75,7 @@ section {
 }
 
 /* Menu */
-.menu {
+.nav {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -84,7 +84,7 @@ section {
 }
 
 /* Styles pour chaque lien du menu */
-.menu a {
+.nav a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,6 +98,429 @@ section {
     text-decoration: none;
 }
 
-.menu a:hover {
+.nav ul {
+    padding: 30px;
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+  }
+
+.nav a:hover {
     text-decoration: underline;
+}
+
+/*page de contact*/
+
+.nouscontacter {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.nouscontacter h1 {
+    position: absolute;
+    color: black;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+
+
+/*adresse*/
+
+.adresse {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.adresse-text{
+    margin-left: 35px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.gauche {
+    flex: 1;
+}
+
+.form_area {
+    width: 100%;
+}
+
+.droite {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.herbe {
+    width: 286px;
+    height: auto;
+}
+    
+.gauche {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+    
+.contact h3 {
+      color: rgb(0, 0, 0);
+      text-align: center;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 65px;
+    }
+    
+.form_style {
+      background-color: #00CB08;
+      border: none;
+      margin: 15px;
+      height: 40px;
+      width: 328px;
+      text-align: left;
+    }
+    
+.form_style,
+    textarea {
+      text-align: left;
+      padding-left: 45px;
+    }
+    
+.btn {
+      background-color: #00CB08;
+      border: none;
+      margin: 15px;
+      height: 40px;
+      width: 167px;
+      margin-left: 180px;
+    }
+
+/*bottom*/
+.bottom-image 
+{
+    width: 100%;
+    max-width: 1446px;
+    height: 325px;
+    background-image: url('images/jardinbascontact.webp');
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info {
+    text-align: center;
+    color: white;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+.insta, .facebook {
+    border-radius: 10px;
+}
+
+/*page de FAQ*/
+
+/*page de service création, fontaine*/
+/*up*/
+.hautcreation, h1, .hautfontaine {
+    margin-top: -30px;
+    margin-bottom: -40px;
+}
+.explicationcreation, .explicationfontaine {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    margin: 40px 10%;
+    margin-bottom: 50px;
+}
+
+.noscreations, .nosfontaines, h2, h3{
+    text-align: center;
+    line-height: normal;
+    margin-bottom: 26px;
+    font-size: 32px;
+}
+
+.noscreations, .nosfontaines{
+padding: 10px;
+align-items: center;
+justify-content: center;
+margin: 10px;
+}
+
+.noscreations, .nosfontaines {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+.creationbloc1, .creationbloc2, .fontainebloc1, .fontainebloc2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+.creation img, .fontaine img {
+    width: 253px;
+    padding: 5px;
+    margin: 22.5px;
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.creation img:hover, .fontaine img:hover {
+    transform: scale(1.1);
+  }
+
+.servicebloc1, .servicebloc2, .servicebloc3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+.services img{
+    width: 253px;
+    padding: 5px;
+    margin: 22.5px;
+    margin-bottom: 30px;
+     margin-bottom: 30px;
+    height: auto;
+}
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.services a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+}
+
+.services a:hover {
+    text-decoration: underline;
+}
+
+
+
+/*page de faq à finir*/
+.topfaq {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -200px;
+    margin-bottom: 50px;
+}
+
+.faq h1 {
+    position: absolute;
+    color: black;
+    background-color: white;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.allquestions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    max-width: 100%;
+}
+
+.question img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.question h3 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.question p {
+    font-size: 16px;
+    margin-top: 15px;
+    padding: 0 10px;
+    text-align: justify;
+}
+
+.question {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.question {
+    margin-top: 40px; 
+}
+
+
+  
+
+/*page de présentation Ines*/
+
+.nav ul {
+    list-style: none !important;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.topines, h1 {
+    text-align: center;
+    line-height: normal;
+    margin-bottom: 26px;
+    font-size: 32px;
+    margin-top: -30px;
+    margin-bottom: 40px;
+}
+
+.menuines {
+    margin-top: -30px;
+    margin-bottom: -40px;
+}
+
+.menuines {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    margin: 40px 10%;
+    margin-bottom: 50px;
+}
+
+.menuines img{
+    width: auto;
+    height: 467px;
+  }
+
+.menu {
+    display: flex;
+    justify-content: justify;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+  }
+  .menuines {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inesnav img {
+    max-width: 300px;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: -150px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.vie {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.enfance, .formation, .parcourspro, .futursprojets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    max-width: 100%;
+}
+
+.enfance img, .formation img, .parcourspro img, .futursprojets img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.enfance p, .formation p, .parcourspro p, .futursprojets p {
+    font-size: 16px;
+    margin-top: 15px;
+    padding: 0 10px;
+    text-align: justify;
+}
+
+.enfance, .formation, .parcourspro, .futursprojets {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.vie, .parcourspro, .vie, .futursprojets {
+    margin-top: 40px; 
 }
