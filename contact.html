@@ -6,6 +6,7 @@
         <title>Nous Contacter</title>
         <meta name="description" content="Comment nous contacter et ou nous trouver">
         <link href="style.css" rel="stylesheet"/>
+        <link rel="preload" href="images/jardinbascontact.webp" as="image">
     </head>
     <body>
         <header>
@@ -27,16 +28,19 @@
                 </div>
 
                 <div class="adresse">
-                    <h2>Nous trouver</h2>
-                    <p>102 Chemin du Génie, 06000 Nice</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.629865160428!2d7.218366074670688!3d43.7390154468785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdce4b65e8d001%3A0x44d604e781a67824!2s102%20Chem.%20du%20G%C3%A9nie%2C%2006000%20Nice!5e0!3m2!1sfr!2sfr!4v1741612984455!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="adresse-text">
+                        <h2>Nous trouver</h2>
+                        <p>102 Chemin du Génie, 06000 Nice</p>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.629865160428!2d7.218366074670688!3d43.7390154468785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdce4b65e8d001%3A0x44d604e781a67824!2s102%20Chem.%20du%20G%C3%A9nie%2C%2006000%20Nice!5e0!3m2!1sfr!2sfr!4v1741612984455!5m2!1sfr!2sfr" class="maps" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </section>
                 <br>
-            <section>
+            <section class="contact">
                 <div class="gauche">
                     <div class="container">
                         <div class="form_area">
+                            <h3>Nous contacter</h3>
                             <form action="#" onsubmit="affiche_information(event)" name="information">
                                 <div class="form_group">
                                     <input id="nom"  class="form_style" type="text" placeholder="Nom">
@@ -69,26 +73,15 @@
                 </div>
                 
             </section>
-            <footer>
-                <div class="bas">
-                    <!--Soit mettre un fond vert soit on ajoute l'image au css avec :
-                    .bottom-image {
-  width: 100%;
-  max-width: 1446px;
-  height: 325px;
-  background-image: url('jardinbascontact');
-  background-size: cover;
-  background-position: center;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}-->
+        </main>
+
+        <footer class="bottom-image">
+            <div class="contact-info">
                     <p>Tel : 07.88.76.05.71</p>
                     <p>Email : contact@lucasjardins.com</p>
-                    <a href="https://www.instagram.com/lucasjardins06/" target="_blank"><img src="insta.webp" class="insta" alt="Instagram" width="71" height="71" loading="lazy"></a>
-                    <a href="https://www.facebook.com/profile.php?id=100089258752223" target="_blank"><img src="facebook.webp" class="facebook" alt="Facebook" width="71" height="71" loading="lazy"></a>
-                </div>
-            </footer>
-        </main>
+                    <a href="https://www.instagram.com/lucasjardins06/" target="_blank"><img src="images/insta.webp" class="insta" alt="Instagram" width="71" height="71" loading="lazy"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100089258752223" target="_blank"><img src="images/facebook.webp" class="facebook" alt="Facebook" width="71" height="71" loading="lazy"></a>
+            </div>
+        </footer>
+    </body>
+</html>
