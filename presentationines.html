@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Inès ABRAM</title>
         <meta name="description" content="Inès Abram est étudiante en Licence 3 Infocom">
+        <link href="style.css" rel="stylesheet"/>
 
         <!--Open Graph (pour les rs insta fb linkedin...)-->
         <meta property="og:title" content="Inès ABRAM">
@@ -59,34 +60,60 @@
     </head>
     <body>
         <header>
-            <h1>Inès Abram - étudiante</h1>
-            <img >
-            <nav>
-                <ul>
-                    <li><a href="#enfance">Enfance</a></li>
-                    <li><a href="#formation">Parcours et Formations</a></li>
-                    <li><a href="#parcourspro">Expériences Professionnelles</a></li>
-                    <li><a href="#futursprojets">Futurs projets</a></li>
-                </ul>
+            <nav class="nav">   
+                <li><a href="apropos.html">A propos</a></li>
+                <li><a href="nosservices.html">Nos services</a></li>
+                <li><a href="nosrealisations.html">Nos Réalisations</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Nous contacter</a></li>
+                <li><a href="presentationines.html">Nous connaître</a></li>
             </nav>
         </header>
         <hr> <!--comentaire-->
         <main>
-            <section id="enfance">
-                <h2>Enfance de Inès Abram</h2>
-                <p>Inès Abram est née à Paris, en 2002.</p>
+            <section class="topines">
+                <h1>Inès Abram - étudiante</h1>
+                <div class="menuines">
+                    <div class="inesnav">
+                        <img src="images/ines2.webp" alt="ines" class="ines">
+                    </div>
+                    <div class="inesnav">
+                        <nav class="menu">
+                            <ul>
+                                <li><a href="#enfance">Enfance</a></li>
+                                <li><a href="#formation">Parcours et Formations</a></li>
+                                <li><a href="#parcourspro">Expériences Professionnelles</a></li>
+                                <li><a href="#futursprojets">Futurs projets</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
             </section>
-            <section id="formation">
-                <h2>Formations</h2>
-                <p>Après une réorientation, elle rejoint la licence Information et communication, au sein du parcours Organisation et stratégie numérique.</p>
-            </section>
-            <section id="parcourspro">
-                <h2>Expériences Professionnelles</h2>
-                <p>Elle effectue actuellement un stage en communication et événementiel au sein de l'entreprise Hominum Games.</p>
-            </section>
-            <section id="futursprojets">
-                <h2>Projets Futurs</h2>
-                <p>Elle aimerait rejoindre un Master en Alternance.</p>
+
+            <section class="vie">
+                <section id="enfance" class="enfance">
+                    <h2>Enfance de Inès Abram</h2>
+                    <img src="images/paris.webp" alt="paris" class="paris">
+                    <p>Inès Abram est née à Paris, en 2002.</p>
+                </section>
+
+                <section id="formation" class="formation">
+                    <h2>Formations</h2>
+                    <img src="images/formationines.webp" alt="formationines" class="formationines">
+                    <p>Après une réorientation, elle rejoint la licence Information et communication, au sein du parcours Organisation et stratégie numérique.</p>
+                </section>
+
+                <section id="parcourspro" class="parcourspro">
+                    <h2>Expériences Professionnelles</h2>
+                    <img src="images/experienceproines.webp" alt="experienceproines" class="experienceproines">
+                    <p>Elle effectue actuellement un stage en communication et événementiel au sein de l'entreprise Hominum Games.</p>
+                </section>
+
+                <section id="images/futursprojets" class="futursprojets">
+                    <h2>Projets Futurs</h2>
+                    <img src="images/futurines.webp" alt="furturines" class="futurines">
+                    <p>Elle aimerait rejoindre un Master en Alternance.</p>
+                </section>
             </section>
         </main>
         <hr>
