@@ -47,15 +47,7 @@ section {
     width: 100%;
 }
 
-#index {
-    background-size: cover;
-    height: 200px;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-}
+
 
 #texte-intro{
     display: flex;
