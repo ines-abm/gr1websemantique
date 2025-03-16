@@ -688,7 +688,7 @@ h2 {
         text-align: center;
     }
 
-    .explicationcreation {
+    .explicationcreation, .explicationfontaine {
         flex-direction: column;
         text-align: center;
         gap: 30px;
@@ -703,7 +703,7 @@ h2 {
         margin-bottom: -50px;
     }
 
-    .explicationcreation img {
+    .explicationcreation img, .explicationfontaine img {
         display: block;
         margin: 0 auto;
         max-width: 100%;
@@ -726,34 +726,6 @@ h2 {
         margin: 10px auto;
     }
 
-    /* ajustement pour la page de service fontaine*/
-
-    .allfontain h1 {
-        margin-top: 20px;
-    }
-
-    .allfontain h1, .hautfontaine {
-        margin-top: 10px;
-    }
-
-    .explicationfontaine img {
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-        height: auto;
-    }
-
-    .explicationfontaine p {
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    .nosfontaines {
-        margin-top: 40px;
-        margin-bottom: 50px;
-    }
-
-}
 
 /* ================== MOBILES ================== */
 @media (max-width: 768px) {
@@ -777,7 +749,7 @@ h2 {
         gap: 30px;
     }
 
-    .explicationcreation {
+    .explicationcreation, .explicationfontaine img{
         flex-direction: column;
         text-align: center;
     }
@@ -797,7 +769,7 @@ h2 {
         margin-top: 40px;
     }
 
-    .explicationcreation img {
+    .explicationcreation img, .explicationfontaine img {
         display: block;
         margin: 0 auto;
         max-width: 100%;
@@ -816,13 +788,6 @@ h2 {
 
     .allfontain h1, .hautfontaine {
         margin-top: 10px;
-    }
-
-    .explicationfontaine img {
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
-        height: auto;
     }
 
     .explicationfontaine p {
@@ -902,7 +867,7 @@ h2 {
         margin-top: 30px;
     }
 
-    .explicationcreation img {
+    .explicationcreation img, .explicationfontaine img {
         display: block;
         margin: 0 auto;
         max-width: 100%;
@@ -923,21 +888,25 @@ h2 {
         margin-top: 10px;
     }
 
-    .explicationfontaine img {
-        display: block;
-        margin: 0 auto;
-        max-width: 100%;
+    .hautfontaine {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .explicationfontaine {
+        max-width: 600px;
+    }
+    
+    .topfontaine {
+        width: 422px;
         height: auto;
     }
-
+    
     .explicationfontaine p {
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    .nosfontaines {
-        margin-top: 40px;
-        margin-bottom: 50px;
+        font-size: 1.2rem;
+        line-height: 1.5;
     }
 
     /*section page de présentation Inès*/
