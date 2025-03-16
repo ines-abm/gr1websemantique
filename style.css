@@ -658,204 +658,99 @@ h2 {
     margin-top: 40px; 
 }
 
-/* Version mobile */
+/* Media queries */
 /*spécial page de présetation à checker*/
-@media all and (max-width: 768px) {
-
-    /* Adaptation du menu de navigation */
-    .nav {
+/* Version Tablette */
+@media screen and (max-width: 768px) {
+    header {
         flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
+        text-align: center;
     }
 
     .nav ul {
         flex-direction: column;
-        gap: 15px;
-        padding: 0;
-        list-style-type: none;
         align-items: center;
     }
 
-    .nav a {
-        font-size: 18px;
-        padding: 10px 0;
-    }
-
-    .top-image {
-        height: 200px;
-        background-position: center;
-    }
-
-    .top-image h1 {
-        font-size: 32px;
-        width: auto;
-        height: auto;
-        padding: 10px;
-    }
-
-    /* Galerie */
-    .galerie {
-        flex-direction: column;
-        gap: 20px;
-        margin: 20px 0;
-    }
-
-    .element {
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
-    }
-
-    .img_artiste {
-        width: 100%;
-        height: auto;
-        max-width: 400px;
-    }
-
-    /* Images dans les sections */
-    .paris, .formationines, .experienceproines {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-        margin: 10px 0;
-    }
-
-    /* Sections de texte */
-    .vie h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-
-    .vie p {
-        font-size: 16px;
-        line-height: 1.5;
-        margin: 10px 0;
-    }
-
-    /* Menu sur la section topines */
     .menuines {
-        display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     .inesnav {
-        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
     }
 
-    .menu ul {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+/* Version Tél */
+@media screen and (max-width: 480px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav ul {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        width: 100%;
+        background: white;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .vie {
+        flex-direction: column;
         align-items: center;
+    }
+
+    .sous-menu {
+        position: relative;
+        width: 100%;
+    }
+
+    /* Style du menu pour mobile */
+    .nav ul {
         padding: 0;
-        list-style-type: none;
-    }
-
-    .menu li {
         text-align: center;
-    }
-
-    /* Footer */
-    footer {
-        padding: 20px;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    .bas {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .adresse p {
-        font-size: 18px;
-    }
-
-    /* Formulaire */
-    .form_style,
-    .btn {
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
-    }
-
-    .form_group {
-        margin-bottom: 20px;
-    }
-
-    .contact {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* Galerie images */
-    .tableau img {
-        width: 100%;
-        max-width: 200px;
-        margin: 20px auto;
-    }
-}
-
-/*pour la page de création à checker*/
-@media (max-width: 768px) {
-    .nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .creationbloc1, .creationbloc2 {
-        flex-direction: column;
-    }
-
-    .servicebloc1, .servicebloc2, .servicebloc3 {
-        justify-content: center;
-    }
-
-    .services {
-        width: 45%;
-    }
-
-    .explicationcreation {
-        margin: 0;
-        width: 100%;
-    }
-
-    .noscreations {
-        margin-top: 30px;
-    }
-}
-
-@media (max-width: 480px) {
-    .services {
-        width: 100%;
-    }
-
-    .nav ul {
-        display: none;
     }
 
     .nav ul li {
         width: 100%;
-    }
-
-    .menu-deroulant:hover .sous-menu {
-        display: none;
-    }
-
-    .nav ul.active {
-        display: flex;
-        flex-direction: column;
+        padding: 10px;
     }
 
     .nav ul li a {
-        text-align: center;
-        padding: 15px 0;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        text-decoration: none;
+        background: #f8f8f8;
+        border-bottom: 1px solid #ddd;
     }
 
-    .explicationcreation img {
+    /* Pour éviter les sous-menus qui débordent */
+    .menu-deroulant .sous-menu {
+        position: relative;
+        display: block;
         width: 100%;
+    }
+
+    .sous-menu li {
+        text-align: center;
     }
 }
