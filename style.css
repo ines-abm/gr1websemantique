@@ -22,6 +22,17 @@ header {
     align-items: center;
 }
 
+.logo {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: auto;
+    background-color:black;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -116,13 +127,13 @@ section {
 
 .sous-menu a {
     padding: 10px 20px;
-    background-color: #f9f9f9;
+    background-color: #F9F5F0;
     color: #333;
     transition: background-color 0.3s ease;
 }
 
 .sous-menu a:hover {
-    background-color: #ddd;
+    background-color: #F9F5F0;
 }
 
 .menu-deroulant {
@@ -322,15 +333,13 @@ section {
     border-radius: 10px;
 }
 
-/*page de FAQ*/
-
-/*page de service création, fontaine*/
+/*page de service création, fontaine, et galerie page de réalisation*/
 /*up*/
-.hautcreation, h1, .hautfontaine {
+.hautcreation, h1, .hautfontaine, .hautrealisation {
     margin-top: -30px;
     margin-bottom: -80px;
 }
-.explicationcreation, .explicationfontaine {
+.explicationcreation, .explicationfontaine, .explicationrealisation {
     display: flex;
     align-items: center;
     gap: 70px;
@@ -350,34 +359,34 @@ section {
     margin-left: -25px;
 }
 
-.noscreations, .nosfontaines, h2, h3{
+.noscreations, .nosfontaines, .nosrealisation, h2, h3{
     text-align: center;
     line-height: normal;
     margin-bottom: 26px;
     font-size: 32px;
 }
 
-.noscreations, .nosfontaines{
+.noscreations, .nosfontaines, .nosrealisations {
 padding: 10px;
 align-items: center;
 justify-content: center;
 margin: 10px;
 }
 
-.noscreations, .nosfontaines {
+.noscreations, .nosfontaines, .nosrealisations {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
   }
 
-.creationbloc1, .creationbloc2, .fontainebloc1, .fontainebloc2{
+.creationbloc1, .creationbloc2, .fontainebloc1, .fontainebloc2, .realisationbloc1, .realisationbloc2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
   }
 
-.creation img, .fontaine img {
+.creation img, .fontaine img, .realisation img {
     width: 253px;
     padding: 5px;
     margin: 22.5px;
@@ -387,7 +396,7 @@ margin: 10px;
     transition: transform 0.3s ease-in-out;
 }
 
-.creation img:hover, .fontaine img:hover {
+.creation img:hover, .fontaine img:hover, .realisation img:hover{
     transform: scale(1.1);
   }
 
@@ -424,8 +433,6 @@ margin: 10px;
 .services a:hover {
     text-decoration: underline;
 }
-
-
 
 /*page de faq à finir*/
 .topfaq {
@@ -511,21 +518,16 @@ margin: 10px;
     line-height: normal;
     margin-bottom: 26px;
     font-size: 32px;
-    margin-top: -30px;
-    margin-bottom: 40px;
-}
-
-.menuines {
-    margin-top: -30px;
-    margin-bottom: -40px;
+    margin-top: -45px;
+    margin-bottom: 50px;
 }
 
 .menuines {
     display: flex;
     align-items: center;
     gap: 70px;
-    margin: 40px 10%;
-    margin-bottom: 50px;
+    margin: 10px 10%;
+    margin-bottom: 10px;
 }
 
 .menuines img{
@@ -552,6 +554,8 @@ margin: 10px;
 }
 
 .inesnav img {
+    margin-top: 50px;
+    margin-bottom: -100px;
     max-width: 300px;
     height: auto;
     margin-top: 20px;
@@ -580,28 +584,47 @@ margin: 10px;
     color: black;
     font-weight: bold;
 }
+.separateur {
+    border: none;
+    height: 3px;
+    background-color: black;
+    width: 100%;
+    margin: 20px auto;
+}
 
 .vie {
     display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
-    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px; 
+    width: 80%;
+    margin: 0 auto;
 }
 
 .enfance, .formation, .parcourspro, .futursprojets {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%; 
+    max-width: 600px; 
     text-align: center;
-    width: 300px;
-    max-width: 100%;
+    padding: 20px;
+    background-color: white; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.enfance img, .formation img, .parcourspro img, .futursprojets img {
+.enfance {
+    margin-top: -50px;
+}
+
+.enfance img, .formation img, .futursprojets img {
     width: 100%;
-    height: 200px;
+    height: 272px;
     object-fit: cover;
+}
+
+.parcourspro img {
+    width: auto;
+    height: 272px; 
+    background-size: cover;
+    background-position: top;
 }
 
 h2 {
