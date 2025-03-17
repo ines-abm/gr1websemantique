@@ -434,6 +434,60 @@ margin: 10px;
     text-decoration: underline;
 }
 
+/*ajustements des etapes fontaine*/
+
+.titreetape {
+    text-align: left;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.bloc-etape {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.etapefontaine {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+}
+
+.etapefontaine img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+.etapefontaine h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    margin-top: 10px;
+}
+
+.etapefontaine p {
+    text-align: justify;
+    width: 100%;
+    max-width: 250px;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+.info-supp {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
 /*page de faq à finir*/
 .topfaq {
     position: relative;
