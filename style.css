@@ -890,7 +890,7 @@ h2 {
         margin-top: 10px;
     }
 
-    .hautfontaine {
+    /*.hautfontaine {
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -909,7 +909,7 @@ h2 {
     .explicationfontaine p {
         font-size: 1.2rem;
         line-height: 1.5;
-    }
+    }*/
 
     /*section page de présentation Inès*/
     .topines h1 {
