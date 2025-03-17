@@ -3,122 +3,20 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Nos Créations</title>
-        <meta name="description" content="Découvrez nos services de création.">
+        <title>Nos réalisations</title>
+        <meta name="description" content="description">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400&display=swap" rel="stylesheet">
-        <link href="style.css" rel="stylesheet"/>
-        <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "Service",
-                "name": "Nos créations",
-                "description": "Découvrez nos services de création en jardinerie et paysagerie.",
-                "provider": {
-                    "@type": "GardenStore",
-                    "name": "Entreprise de jardinerie et paysagerie",
-                    "url":"https://www.lucasjardins.fr/",
-                    "logo": {
-                        "@type": "ImageObject",
-                        "url": "https://www.lucasjardins.fr/images/lucas_jardin_logo.png",
-                        "width": 580,
-                        "height": 436
-                    },
-                    "address": {
-                        "@type": "PostalAddress",
-                        "streetAddress": "102 Chemin du Génie",
-                        "addressLocality": "Nice",
-                        "postalCode": "06000",
-                        "addressCountry": "FR"
-                    },
-                    "telephone": "+330788760571",
-                    "email": "contact@lucasjardins.com"
-                },
-                "areaServed": {
-                    "@type": "Place",
-                    "name": "Nice, Nice sud, Nice est et Nice ouest"
-                },
-                "serviceType": [
-                    "Créations",
-                    "Installation de bassin d'eau et fontaines",
-                    "Élagage",
-                    "Entretiens des jardins",
-                    "Système d'Arrosage",
-                    "Plantations",
-                    "Taille de végétaux",
-                    "Débrouissallage",
-                    "Abattage",
-                    "Conception de jardins",
-                    "Toitures et murs végétals",
-                    "Installation d'éclairage extérieur",
-                ],
-                "url": "https://www.lucasjardins.fr/servicecreation.html",
-                "image": "https://www.lucasjardins.fr/images/service-creation.webp",
-                "priceRange": "€€€",
-                "review": [
-                    {
-                        "@type": "Review",
-                        "author": {
-                            "@type":"Person",
-                            "name": "Emmanuel Grand"
-                        },
-                        "reviewRating": {
-                            "@type": "Rating",
-                            "ratingValue": "4",
-                            "bestRating": "5"
-                        },
-                        "reviewBody": "Entrepreneur sympathique Travail de qualité, soigné. Travail toujours conforme à la demande. Jardin nettoyé et propre après chaque intervention. Je ne peux que recommander."
-                    },
-                    {
-                        "@type": "Review",
-                        "author": {
-                            "@type":"Person",
-                            "name": "Marlène Ange"
-                        },
-                        "reviewRating": {
-                            "@type": "Rating",
-                            "ratingValue": "5",
-                            "bestRating": "5"
-                        },
-                        "reviewBody": "Satisfaite à chaque intervention"
-                    },
-                    {
-                        "@type": "Review",
-                        "author": {
-                            "@type":"Person",
-                            "name": "Pierre Dupont"
-                        },
-                        "reviewRating": {
-                            "@type": "Rating",
-                            "ratingValue": "5",
-                            "bestRating": "5"
-                        },
-                        "reviewBody": "Toujours satisfait de leurs prestations de prestations ."
-                    },
-                    {
-                        "@type": "Review",
-                        "author": {
-                            "@type":"Person",
-                            "name": "Patrick Gervais"
-                        },
-                        "reviewRating": {
-                            "@type": "Rating",
-                            "ratingValue": "5",
-                            "bestRating": "5"
-                        },
-                        "reviewBody": "Taille de cyprès de Leyland effectuée de façon professionnelle. Travail soigné. Équipe sympathique. Je ferai à nouveau appel à leurs services. Je recommande cette entreprise."
-                    },
-                ]
-            }
-        </script>
+        <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
         <header>
             <img src="images/lucas-jardin-logo.png" alt="Logo du site" class="logo" width="580" height="436" loading="lazy">
             <nav class="nav">
-                <ul> 
-                    <li><a href="index.html">ACCUEIL</a></li>
+                <ul>
+                    <li><a href="#index" title="Accueil du site">ACCUEIL</a></li>
                     <li class="menu-deroulant">
                         <a href="#">NOS SERVICES</a>
                         <ul class="sous-menu">
@@ -126,114 +24,71 @@
                             <li><a href="service-installation-de-fontaine.html">Installation de bassins d'eau et fontaines</a></li>
                         </ul>
                     </li>
-                    <li><a href="nos-realisations.html">NOS RÉALISATIONS</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">NOUS CONTACTER</a></li>
-                </ul>  
+                    <li><a href="nos-realisations.html" title="?">NOS RÉALISATIONS</a></li>
+                    <li><a href="faq.html" title="?">FAQ</a></li>
+                    <li><a href="contact.html" title="?">NOUS CONTACTER</a></li>
+            </ul>
             </nav>
         </header>
-        <main class="hautcreation">
-            <h1>Nos Créations</h1>
-            <section id="création" class="création">
-                <div class="explicationcreation">
-                    <img src="images/topimagecreation.webp" alt="crea" class="element" width="422" height="276" loading="lazy">
-                        <p>Depuis 1998, nous vous accompagnons dans la création de vos espaces verts. De l’aménagement judicieux des zones et différents espaces, au choix des espèces, l’installation de l’arrosage, jusqu’à la plantation et l’entretien, nous intervenons et nous nous occupons de toutes les étapes.</p>
-                </div>
-                <div class="conceptionexplication">
-                    <h2>Conception et Création</h2>
-                    <p>Faites appel à nos paysagistes chevronnés pour réussir la création du jardin de vos rêves. Spécialisés dans l’aménagement et <a href="entretien.html">l’entretien d’espaces verts</a>, nous proposons une prestation clé en main pour créer un jardin harmonieux à votre image.
-                        Vous pouvez compter sur nous pour nous occuper de l’intégralité des travaux : débroussaillage, préparation du terrain, plantation des arbres et arbustes, pose de pelouse et autres. Nous créerons pour vous un espace verdoyant et serein, propice à la détente et au ressourcement.</p>
-                    <br>
-                    <p>Pour demandez un devis, vous pouvez nous appeler au 07.88.76.05.71, ou utilisez notre formulaire dans la page de <a href="contact.html">contact</a>.</p>
-                </div>
-                <div class="noscreations">
-                    <h2>Nos Réalisations</h2>
-                    <div class="creationbloc1">
-                        <article class="creation">
-                            <a href="#"><img src="images/creation1.webp" alt="creation1" width="253" height="253" loading="lazy"></a>
-                        </article>
-    
-                        <article class="creation">
-                            <a href="#"><img src="images/creation2.webp" alt="creation2" width="253" height="253" loading="lazy"></a>
-                        </article>
-                    </div>
-    
-                    <div class="creationbloc2">
-                        <article class="creation">
-                            <a href="#"><img src="images/creation3.webp" alt="creation3" width="253" height="253" loading="lazy"></a>
-                        </article>
-                        
-                        <article class="creation">
-                            <a href="#"><img src="images/creation4.webp" alt="creation4" width="253" height="253" loading="lazy"></a>
-                        </article>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="allservices">
-            <h3>Nos autres services</h3>
-            <div class="servicebloc1">
-                <div class="services">
-                    <a href="service-installation-de-fontaine.html"><img src="images/topfontaine.webp" alt="hautfontaine" width="253" height="253" loading="lazy"></a>
-                    <a href="service-installation-de-fontaine.html">Installation de bassins d'eau et fontaines</a> 
-                </div>
-
-                <div class="services">
-                    <img src="images" alt="service2" width="253" height="253" loading="lazy">
-                    <a href="systemed'arrosage.html">Systèmes d'arrosage</a> 
-                </div>
-
-                <div class="services">
-                    <img src="images" alt="service3" width="253" height="253" loading="lazy">
-                    <a href="">Plantation</a> 
-                </div>
-            
-                <div class="services">
-                    <img src="images" alt="service4" width="253" height="253" loading="lazy">
-                    <a href="">Élagage</a> 
-                </div>
-            </div>
-
-            <div class="servicebloc2">
-                <div class="services">
-                    <img src="images" alt="service5" width="253" height="253" loading="lazy">
-                    <a href="">Taille de végétaux</a> 
-                </div>
-
-                <div class="services">
-                    <img src="images" alt="service6" width="253" height="253" loading="lazy">
-                    <a href="">AUTRE</a> 
-                </div>
-
-                <div class="services">
-                    <img src="images" alt="service7" width="253" height="253" loading="lazy">
-                    <a href="">Autre</a> 
-                </div>
-            
-                <div class="services">
-                    <img src="images" alt="service8" width="253" height="253" loading="lazy">
-                    <a href="">Autre</a> 
-                </div>
-            </div>
-
-            <div class="servicebloc3">
-                <div class="services">
-                    <img src="images" alt="service9" width="253" height="253" loading="lazy">
-                    <a href="">AUtre</a> 
-                </div>
-
-                <div class="services">
-                    <img src="images" alt="service10" width="253" height="253" loading="lazy">
-                    <a href="">autre</a> 
-                </div>
-
-                <div class="services">
-                    <img src="images" alt="service11" width="253" height="253" loading="lazy">
-                    <a href="">autre</a> 
-                </div>
-            </div>
-            <p>(c) Inès Abram, étudiante.</p>
         
-        </footer> 
-    </body>
+        <main class="allrealisation">
+        <h1>Nos réalisations</h1>
+        <section id="fontaine" class="hautrealisation">
+            <div class="explicationrealisation">
+                <img src="images/topfontaine.webp" alt="toprealisation" class="toprealisation" width="422" height="276" loading="lazy">
+                    <p>Retrouvez l'ensemble de nos réalisations dans notre galerie d'images</p>
+            </div>
+            <div class="nosrealisations">
+                <h2>Nos Réalisations</h2>
+                <div class="realisationbloc1">
+                    <article class="realisation">
+                        <a href="#"><img src="images/fontaine1.webp" alt="realisation1" width="253" height="253" loading="lazy"></a>
+                    </article>
+
+                    <article class="realisation">
+                        <a href="#"><img src="images/fontaine2.webp" alt="realisation2" width="253" height="253" loading="lazy"></a>
+                    </article>
+                </div>
+
+                <div class="realisationbloc2">
+                    <article class="realisation">
+                        <a href="#"><img src="images/fontaine3.webp" alt="realisation3" width="253" height="253" loading="lazy"></a>
+                    </article>
+                    
+                    <article class="realisation">
+                        <a href="#"><img src="images/fontaine4.webp" alt="realisation4" width="253" height="253" loading="lazy"></a>
+                    </article>
+                </div>
+                <div class="creationbloc1">
+                    <article class="creation">
+                        <a href="#"><img src="images/creation1.webp" alt="creation1" width="253" height="253" loading="lazy"></a>
+                    </article>
+
+                    <article class="creation">
+                        <a href="#"><img src="images/creation2.webp" alt="creation2" width="253" height="253" loading="lazy"></a>
+                    </article>
+                </div>
+
+                <div class="creationbloc2">
+                    <article class="creation">
+                        <a href="#"><img src="images/creation3.webp" alt="creation3" width="253" height="253" loading="lazy"></a>
+                    </article>
+                    
+                    <article class="creation">
+                        <a href="#"><img src="images/creation4.webp" alt="creation4" width="253" height="253" loading="lazy"></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        </main>
+        <hr>
+        <footer class="contact">
+            <div class="contact-info">
+                <p>Tel : 07.88.76.05.71</p>
+                <p>Email : contact@lucasjardins.com</p>
+                <a href="https://www.instagram.com/lucasjardins06/" target="_blank"><img src="images/insta.webp" class="insta" alt="Instagram" width="71" height="71" loading="lazy"></a>
+                <a href="https://www.facebook.com/profile.php?id=100089258752223" target="_blank"><img src="images/facebook.webp" class="facebook" alt="Facebook" width="71" height="71" loading="lazy"></a>
+            </div>
+        </footer>
+</body>
 </html>
