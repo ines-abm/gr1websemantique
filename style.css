@@ -150,64 +150,6 @@ section {
 
 /*page d'accueil*/
 
-/*partie sur les étudiantes*/
-.student1, .student2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .nosetudiantes {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .allstudent {
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-  }
-  
-  .allstudent h2 {
-    font-family: 'Loubag', sans-serif;
-    font-weight: 400;
-    color: #000000;
-    text-align: center;
-    line-height: normal;
-    margin-bottom: 26px;
-  }
-  
-  .allstudent h2 {
-    font-size: 36px;
-  }
-
-  .allstudent p {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-family: 'Agrandir', sans-serif;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  
-  .etudiante img {
-    width: 253px;
-    padding: 5px;
-    margin: 22.5px;
-    margin-bottom: 30px;
-     margin-bottom: 30px;
-    height: auto;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .etudiante img:hover {
-    transform: scale(1.1);
-  }
-
 /*page de contact*/
 
 .nouscontacter {
@@ -359,6 +301,10 @@ section {
     margin-left: -25px;
 }
 
+.explicationcreation p{
+    font-size: 18px;
+}
+
 .noscreations, .nosfontaines, .nosrealisation, h2, h3{
     text-align: center;
     line-height: normal;
@@ -399,6 +345,28 @@ margin: 10px;
 .creation img:hover, .fontaine img:hover, .realisation img:hover{
     transform: scale(1.1);
   }
+
+.conceptionexplication h2{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+    max-width: 250px;
+    margin-top: 10px;
+}
+
+.conceptionexplication {
+    margin-bottom: 15px;
+}
+
+.conceptionexplication p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.conceptionexplication a {
+    color: #000;
+}
 
 .servicebloc1, .servicebloc2, .servicebloc3{
     display: flex;
@@ -553,155 +521,6 @@ margin: 10px;
 }
 
 
-  
-
-/*page de présentation Ines*/
-
-.nav ul {
-    list-style: none !important;
-    padding: 0;
-    margin: 0;
-}
-
-.nav li {
-    display: inline-block;
-}
-
-.topines, h1 {
-    text-align: center;
-    line-height: normal;
-    margin-bottom: 26px;
-    font-size: 32px;
-    margin-top: -45px;
-    margin-bottom: 50px;
-}
-
-.menuines {
-    display: flex;
-    align-items: center;
-    gap: 70px;
-    margin: 10px 10%;
-    margin-bottom: 10px;
-}
-
-.menuines img{
-    width: auto;
-    height: 467px;
-  }
-
-.menu {
-    display: flex;
-    justify-content: space-around;
-    color: #000;
-    text-align: center;
-    font-family: Inter;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration: none;
-  }
-  .menuines {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.inesnav img {
-    margin-top: 50px;
-    margin-bottom: -100px;
-    max-width: 300px;
-    height: auto;
-    margin-top: 20px;
-    margin-right: 40px;
-}
-
-.menu {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: -150px;
-}
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-    text-align: left;
-}
-
-.menu ul li {
-    margin-bottom: 10px;
-}
-
-.menu ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-.separateur {
-    border: none;
-    height: 3px;
-    background-color: black;
-    width: 100%;
-    margin: 20px auto;
-}
-
-.vie {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px; 
-    width: 80%;
-    margin: 0 auto;
-}
-
-.enfance, .formation, .parcourspro, .futursprojets {
-    width: 100%; 
-    max-width: 600px; 
-    text-align: center;
-    padding: 20px;
-    background-color: white; 
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.enfance {
-    margin-top: -50px;
-}
-
-.enfance img, .formation img, .futursprojets img {
-    width: 100%;
-    height: 272px;
-    object-fit: cover;
-}
-
-.parcourspro img {
-    width: auto;
-    height: 272px; 
-    background-size: cover;
-    background-position: top;
-}
-
-h2 {
-    font-size: 22px;
-    margin-top: 10px;
-}
-
-.enfance p, .formation p, .parcourspro p, .futursprojets p {
-    font-size: 16px;
-    margin-top: 15px;
-    padding: 0 10px;
-    text-align: justify;
-}
-
-.enfance, .formation, .parcourspro, .futursprojets {
-    margin-right: 50px;
-    margin-left: 50px;
-}
-
-.vie, .parcourspro, .vie, .futursprojets {
-    margin-top: 40px; 
-}
-
 /* Version Tablette */
 /*spécial page de présetation à checker*/
 /* ================== TABLETTES ================== */
@@ -730,7 +549,6 @@ h2 {
         gap: 50px;
     }
 
-    .student1, .student2,
     .creationbloc1, .creationbloc2,
     .servicebloc1, .servicebloc2, .servicebloc3 {
         flex-direction: column;
@@ -855,50 +673,6 @@ h2 {
         margin-bottom: 50px;
     }
 
-    /*section page de presentation ines*/
-
-    .topines {
-        display: block;
-        align-content: center;
-        margin-top: 15px;
-    }
-
-    .inesnav {
-        width: 100%;
-        margin-bottom: 5px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .menuines {
-        display: flex;
-        align-items: center;
-        gap: 70px;
-        margin: 10px 10%;
-        margin-bottom: 30px;
-    }
-
-    .menuines img {
-        width: 80%;
-        height: auto;
-    }
-
-    .vie {
-        flex-direction: column;
-        gap: 20px;
-        width: 100%;
-    }
-
-    .enfance, .formation, .parcourspro, .futursprojets {
-        width: 100%;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .enfance img, .formation img, .parcourspro img, .futursprojets img {
-        width: 100%;
-        height: auto;
-    }
 }
 
 /* ================== PETITS ÉCRANS (Téléphones) ================== */
@@ -965,26 +739,6 @@ h2 {
         line-height: 1.5;
     }*/
 
-    /*section page de présentation Inès*/
-    .topines h1 {
-        font-size: 24px;
-        margin-top: 15px;
-    }
-
-    .vie {
-        gap: 15px;
-    }
-
-    .vie h2 {
-        font-size: 20px;
-    }
-
-    .vie p {
-        font-size: 14px;
-        padding: 0 5%;
-    }
-
-    .etudiante img,
     .services img {
         max-width: 180px;
     }
