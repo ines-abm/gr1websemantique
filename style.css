@@ -114,6 +114,7 @@ section {
     display: flex;
     list-style-type: none;
     gap: 40px;
+    margin-bottom: -50px;
   }
 
 .nav a:hover {
@@ -224,7 +225,7 @@ section {
     }
     
 .form_style {
-      background-color: #00CB08;
+      background-color: #4CAF50;
       border: none;
       margin: 15px;
       height: 40px;
@@ -239,7 +240,7 @@ section {
     }
     
 .btn {
-      background-color: #00CB08;
+      background-color: #4CAF50;
       border: none;
       margin: 15px;
       height: 40px;
@@ -277,9 +278,32 @@ section {
 
 /*page de service création, fontaine, et galerie page de réalisation*/
 /*up*/
+
+.banniere {
+    width: 100vw;
+    height: 200px;
+    background-image: url('images/fontaine-banniere.webp');
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -80px;
+}
+
+.banniere h1{
+    text-align: center;
+    margin-top:40px;
+    background-color: #4CAF50;
+    width: 575px;
+    height: auto;
+}
+
 .hautcreation, h1, .hautfontaine, .hautrealisation {
     margin-top: -30px;
-    margin-bottom: -80px;
+    margin-bottom: 10px;
 }
 .explicationcreation, .explicationfontaine, .explicationrealisation {
     display: flex;
@@ -312,18 +336,19 @@ section {
     font-size: 32px;
 }
 
-.noscreations, .nosfontaines, .nosrealisations {
-padding: 10px;
-align-items: center;
-justify-content: center;
-margin: 10px;
+.noscreations h2{
+    margin-top: 30px;
 }
 
 .noscreations, .nosfontaines, .nosrealisations {
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-  }
+}
 
 .creationbloc1, .creationbloc2, .fontainebloc1, .fontainebloc2, .realisationbloc1, .realisationbloc2 {
     display: flex;
@@ -336,9 +361,9 @@ margin: 10px;
     width: 253px;
     padding: 5px;
     margin: 22.5px;
-    margin-bottom: 30px;
-    margin-bottom: 30px;
-    height: auto;
+    margin-bottom: 5px;
+    height: 253px;
+    object-fit: cover;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -366,6 +391,28 @@ margin: 10px;
 
 .conceptionexplication a {
     color: #000;
+}
+
+.separator {
+    border: none;
+    height: 3px;
+    background-color: #4CAF50; 
+    margin: 50px 0;
+    width: 70%;
+    text-align: left;
+}
+
+.separator3 {
+    border: none;
+    height: 3px;
+    background-color: #4CAF50;
+    margin: 5px auto 10px auto;
+    width: 80%;
+}
+
+.allservices h3 {
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .servicebloc1, .servicebloc2, .servicebloc3{
@@ -411,6 +458,21 @@ margin: 10px;
     margin-bottom: 40px;
 }
 
+.separatorfontaine {
+    border: none;
+    height: 3px;
+    background-color: #4CAF50; 
+    margin-top: -10px; /* Réduit l’espace au-dessus */
+    margin-bottom: 30px; /* Augmente l’espace en dessous */
+    width: 70%;
+    display: block;
+    margin-left: 0; /* Aligne complètement à gauche */
+}
+
+.alletapefontaine{
+    margin-top: -100px;
+}
+
 .bloc-etape {
     display: flex;
     justify-content: space-between;
@@ -451,9 +513,30 @@ margin: 10px;
 .info-supp {
     width: 100%;
     text-align: center;
-    margin-top: 20px;
     font-size: 1.1em;
     font-weight: bold;
+}
+
+.separatorfontaine2 {
+    margin-top: 100px;
+    margin-bottom: 25px;
+    border: none;
+    height: 3px;
+    background-color: #4CAF50;
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+}
+
+.separatorfontaine3 {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border: none;
+    height: 3px;
+    background-color: #4CAF50;
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
 }
 
 /*page de faq à finir*/
