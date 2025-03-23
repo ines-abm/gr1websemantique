@@ -99,67 +99,204 @@ section {
     text-decoration: underline;
 }
 
-/*partie sur les étudiantes
+ /*page de présentation Ines*/
 
-.student1, .student2 {
+
+.banniere-ines{
+  height: 200px;
+  width: 1000px;
+  background-image: url('images/banniere-ines.webp');
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-ines {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
-  }
-  
-  .nosetudiantes {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .allstudent {
-    padding: 10px;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.menu-ines a {
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px;
-  }
-  
-  .allstudent h2 {
-    font-family: 'Loubag', sans-serif;
-    font-weight: 400;
-    color: #000000;
+    color: #000;
     text-align: center;
-    line-height: normal;
-    margin-bottom: 26px;
-  }
-  
-  .allstudent h2 {
-    font-size: 36px;
-  }
-
-  .allstudent p {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-family: 'Agrandir', sans-serif;
-    font-size: 24px;
+    font-family: Inter;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-decoration: none;
+}
+
+.menu-ines ul {
+    padding: 30px;
+    display: flex;
+    list-style-type: none;
+    gap: 100px;
+    margin-top: -25px;
   }
   
-  .etudiante img {
-    width: 253px;
-    padding: 5px;
-    margin: 22.5px;
-    margin-bottom: 30px;
-     margin-bottom: 30px;
+  .menu-ines ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+  }
+
+.menu-ines ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #87CEEB;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu-ines ul li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+.top-ines, h1 {
+    text-align: center;
+    line-height: normal;
+    color:#87CEEB;
+    margin-bottom: 26px;
+    font-size: 45px;
+}
+
+.presentation-ines {
+    display: flex;
+    align-items: center;
+    color: #000;
+    gap: 70px;
+    margin: 10px 10%;
+    margin-bottom: 10px;
+}
+
+  .texte-presentation-ines {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start;
+    font-size: 18px;
+    text-align: justify;
+    background-color: #87CEEB;
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.presentation-ines img {
+    margin-top: -80px;
+    margin-bottom: -100px;
+    max-width: 300px;
     height: auto;
-    transition: transform 0.3s ease-in-out;
+    margin-right: 40px;
+}
+
+.texte-presentation-ines h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    margin-left: 70px;
+}
+
+.separateur-ines {
+    border: none;
+    height: 3px;
+    background-color:#87CEEB;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.vie-ines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px; 
+    width: 80%;
+    margin: 0 auto;
+}
+
+.vie-ines img {
+    margin-top: 10px;
   }
   
-  .etudiante img:hover {
+  .vie-ines img:hover {
     transform: scale(1.1);
   }
-  */
 
-  /*page de présentation Ines*/
+.enfance-ines, .formation-ines, .parcourspro-ines, .futursprojets-ines {
+    width: 100%; 
+    max-width: 600px; 
+    text-align: center;
+    padding: 20px;
+    background-color:#87CEEB; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.enfance-ines {
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.enfance-ines img, .formation-ines img, .futursprojets-ines img {
+    width: 100%;
+    height: 272px;
+    object-fit: cover;
+}
+
+.parcourspro-ines img {
+    width: auto;
+    height: 272px; 
+    background-size: cover;
+    background-position: top;
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.enfance-ines p, .formation-ines p, .parcourspro-ines p, .futursprojets-ines p {
+    font-size: 16px;
+    margin-top: 15px;
+    padding: 0 10px;
+    text-align: justify;
+}
+
+.enfance-ines, .formation-ines, .parcourspro-ines, .futursprojets-ines {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.vie-ines, .parcourspro-ines, .vie-ines, .futursprojets-ines {
+    margin-top: 40px; 
+}
+
+.bas-ines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #F9F5F0;
+    width: 100%;
+}
+  /*page de présentation Eva*/
 
 .nav ul {
     list-style: none !important;
