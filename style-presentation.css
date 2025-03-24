@@ -65,7 +65,7 @@ section {
 }
 
 /* Menu */
-.nav {
+.navines {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -74,7 +74,7 @@ section {
 }
 
 /* Styles pour chaque lien du menu */
-.nav a {
+.navines a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,14 +88,14 @@ section {
     text-decoration: none;
 }
 
-.nav ul {
+.navines ul {
     padding: 30px;
     display: flex;
     list-style-type: none;
     gap: 40px;
   }
 
-.nav a:hover {
+.navines a:hover {
     text-decoration: underline;
 }
 
