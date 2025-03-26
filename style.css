@@ -784,10 +784,10 @@ section {
     transition: background-color 0.3s ease;
 }
 
-#accueil {
-    background-image: url("images/nosfleurs.jpeg");
+#fleurs {
+    background-image: url("images/nosfleurs.png");
     background-size: cover;
-    height: 200px;
+    height: 391px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -795,13 +795,26 @@ section {
     flex-direction: column;
 }
 
-.accueil-image {
+.fleurs-image {
     width: 100%;
     display: block;
     margin: 0 auto;
     /* Centre l'image */
 }
 
+.texte-sous-image{
+    text-align: center;
+    font-size: 22px;
+}
+
+#texte-intro{
+    padding: 100px 0;
+}
+
+h1,
+p {
+    font-family: "Inter";
+}
 
 
 
