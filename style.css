@@ -47,16 +47,6 @@ section {
     width: 100%;
 }
 
-#imageaccueil {
-    background-size: cover;
-    height: 200px;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
-}
-
 #texte-intro{
     display: flex;
     flex-direction: column;
@@ -124,6 +114,7 @@ section {
     display: flex;
     list-style-type: none;
     gap: 40px;
+    margin-bottom: -50px;
   }
 
 .nav a:hover {
@@ -160,63 +151,129 @@ section {
 
 /*page d'accueil*/
 
-/*partie sur les étudiantes*/
-.student1, .student2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.banner {
     width: 100%;
-  }
-  
-  .nosetudiantes {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .allstudent {
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-  }
-  
-  .allstudent h2 {
-    font-family: 'Loubag', sans-serif;
-    font-weight: 400;
-    color: #000000;
-    text-align: center;
-    line-height: normal;
-    margin-bottom: 26px;
-  }
-  
-  .allstudent h2 {
-    font-size: 36px;
-  }
+    height: 185px;
+    overflow: hidden;
+    margin-top: -100px; 
+}
 
-  .allstudent p {
-    color: rgb(0, 0, 0);
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom; 
+}
+
+.topaccueil {
     text-align: center;
-    font-family: 'Agrandir', sans-serif;
+    padding: 30px 20px;
+}
+
+.topaccueil h1 {
+    margin-top: 40px;
+    font-size: 40px;
+    color: #333;
+}
+
+.topaccueil p {
+    margin-top: 50px;
+    max-width: 800px;
+    margin-left: 70px;
+    font-size: 20px;
+    color: #000;
+    text-align: justify;
+}
+
+
+.engagement h2 {
+    text-align: left;
+    margin: 20px;
+}
+
+.separatorfontaine {
+    width: 50%;
+    margin: 10px auto;
+    border: 2px solid #000;
+}
+
+.engagement-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; 
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.nosengagements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    width: 23%;
+    margin: 15px 0;
+}
+
+.nosengagements h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.nosengagements p {
+    text-align: justify;
+    margin: 0 10px;
+}
+
+/* Section chiffres-clés */
+
+.allchiffres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.bloc-chiffre {
+    background: #F9F5F0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 180px;
+    margin-bottom: 20px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.bloc-chiffre h5 {
+    font-size: 50px;
+    margin: 0;
+    color: #4CAF50;
+}
+
+.bloc-chiffre p {
     font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  
-  .etudiante img {
-    width: 253px;
-    padding: 5px;
-    margin: 22.5px;
-    margin-bottom: 30px;
-     margin-bottom: 30px;
-    height: auto;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .etudiante img:hover {
-    transform: scale(1.1);
-  }
+    margin-top: 5px;
+}
+
+.allchiffres {
+    text-align: center;
+    padding: 80px 0;
+    background: url('images/accueil-engagements.webp') center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.chiffre-clés h4 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-align: center;
+}
 
 /*page de contact*/
 
@@ -271,8 +328,9 @@ section {
 }
 
 .herbe {
-    width: 286px;
+    width: 386px;
     height: auto;
+    margin-right: 50px;
 }
     
 .gauche {
@@ -292,7 +350,7 @@ section {
     }
     
 .form_style {
-      background-color: #00CB08;
+      background-color: #4CAF50;
       border: none;
       margin: 15px;
       height: 40px;
@@ -307,7 +365,7 @@ section {
     }
     
 .btn {
-      background-color: #00CB08;
+      background-color: #4CAF50;
       border: none;
       margin: 15px;
       height: 40px;
@@ -345,9 +403,55 @@ section {
 
 /*page de service création, fontaine, et galerie page de réalisation*/
 /*up*/
+
+.banniere {
+    width: 100vw;
+    height: 200px;
+    background-image: url('images/fontaine-banniere.webp');
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -80px;
+}
+.explicationrealisation{
+    background-color: darkseagreen;
+    padding: 60px;
+}
+
+.banniere h1{
+    text-align: center;
+    margin-top:40px;
+    background-color: #4CAF50;
+    width: 575px;
+    height: auto;
+}
+
+.nosrealisations h3{ /*ajustementsous-titre des réalisations*/
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 25px;
+}
+
+.separator-realisations{
+    border: none;
+    height: 3px;
+    background-color: #4CAF50; 
+    margin-top: -10px;
+    margin-bottom: 30px;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
 .hautcreation, h1, .hautfontaine, .hautrealisation {
     margin-top: -30px;
-    margin-bottom: -80px;
+    margin-bottom: 10px;
 }
 .explicationcreation, .explicationfontaine, .explicationrealisation {
     display: flex;
@@ -369,6 +473,10 @@ section {
     margin-left: -25px;
 }
 
+.explicationcreation p{
+    font-size: 18px;
+}
+
 .noscreations, .nosfontaines, .nosrealisation, h2, h3{
     text-align: center;
     line-height: normal;
@@ -376,18 +484,19 @@ section {
     font-size: 32px;
 }
 
-.noscreations, .nosfontaines, .nosrealisations {
-padding: 10px;
-align-items: center;
-justify-content: center;
-margin: 10px;
+.noscreations h2{
+    margin-top: 30px;
 }
 
 .noscreations, .nosfontaines, .nosrealisations {
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-  }
+}
 
 .creationbloc1, .creationbloc2, .fontainebloc1, .fontainebloc2, .realisationbloc1, .realisationbloc2 {
     display: flex;
@@ -400,15 +509,59 @@ margin: 10px;
     width: 253px;
     padding: 5px;
     margin: 22.5px;
-    margin-bottom: 30px;
-    margin-bottom: 30px;
-    height: auto;
+    margin-bottom: 5px;
+    height: 253px;
+    object-fit: cover;
     transition: transform 0.3s ease-in-out;
 }
 
 .creation img:hover, .fontaine img:hover, .realisation img:hover{
     transform: scale(1.1);
   }
+
+.conceptionexplication h2{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+    max-width: 250px;
+    margin-top: 10px;
+}
+
+.conceptionexplication {
+    margin-bottom: 15px;
+}
+
+.conceptionexplication p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.conceptionexplication a {
+    color: #000;
+}
+
+.separator {
+    border: none;
+    height: 3px;
+    background-color: #4CAF50; 
+    margin: 50px 0;
+    width: 70%;
+    text-align: left;
+}
+
+.separator3 {
+    border: none;
+    height: 3px;
+    background-color: #4CAF50;
+    margin: 5px auto 10px auto;
+    width: 80%;
+}
+
+.allservices h3 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
 
 .servicebloc1, .servicebloc2, .servicebloc3{
     display: flex;
@@ -444,6 +597,101 @@ margin: 10px;
     text-decoration: underline;
 }
 
+.nav {
+    position: relative;
+    z-index: 1000;
+}
+
+/*ajustements des etapes fontaine*/
+
+.titreetape {
+    text-align: left;
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.separatorfontaine {
+    border: none;
+    height: 3px;
+    background-color: #4CAF50; 
+    margin-top: -10px;
+    margin-bottom: 30px;
+    width: 70%;
+    display: block;
+    margin-left: 0;
+}
+
+.alletapefontaine{
+    margin-top: -100px;
+}
+
+.bloc-etape {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.etapefontaine {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+}
+
+.etapefontaine img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+}
+
+.etapefontaine h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    margin-top: 10px;
+}
+
+.etapefontaine p {
+    text-align: justify;
+    width: 100%;
+    max-width: 250px;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+.info-supp {
+    width: 100%;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.separatorfontaine2 {
+    margin-top: 100px;
+    margin-bottom: 25px;
+    border: none;
+    height: 3px;
+    background-color: #4CAF50;
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+}
+
+.separatorfontaine3 {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border: none;
+    height: 3px;
+    background-color: #4CAF50;
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+}
+
 /*page de faq à finir*/
 .topfaq {
     position: relative;
@@ -457,8 +705,8 @@ margin: 10px;
 
 .faq h1 {
     position: absolute;
-    color: black;
-    background-color: white;
+    color:#F9F5F0;
+    background-color:#4CAF50;
     font-size: 36px;
     font-weight: bold;
 }
@@ -508,354 +756,643 @@ margin: 10px;
     margin-top: 40px; 
 }
 
-
-  
-
-/*page de présentation Ines*/
-
-.nav ul {
-    list-style: none !important;
-    padding: 0;
-    margin: 0;
-}
-
-.nav li {
-    display: inline-block;
-}
-
-.topines, h1 {
-    text-align: center;
-    line-height: normal;
-    margin-bottom: 26px;
-    font-size: 32px;
-    margin-top: -45px;
+.retour-accueil{
+    font-size: 20px;
+    color: #F9F5F0;
+    text-decoration: none;
     margin-bottom: 50px;
+    background-color: #4CAF50;
+    padding: 15px;
+    border-radius: 10px;
 }
 
-.menuines {
-    display: flex;
-    align-items: center;
-    gap: 70px;
-    margin: 10px 10%;
-    margin-bottom: 10px;
-}
 
-.menuines img{
-    width: auto;
-    height: 467px;
-  }
-
-.menu {
-    display: flex;
-    justify-content: space-around;
-    color: #000;
-    text-align: center;
-    font-family: Inter;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-decoration: none;
-  }
-  .menuines {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.inesnav img {
-    margin-top: 50px;
-    margin-bottom: -100px;
-    max-width: 300px;
-    height: auto;
-    margin-top: 20px;
-    margin-right: 40px;
-}
-
-.menu {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: -150px;
-}
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-    text-align: left;
-}
-
-.menu ul li {
-    margin-bottom: 10px;
-}
-
-.menu ul li a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-.separateur {
-    border: none;
-    height: 3px;
-    background-color: black;
-    width: 100%;
-    margin: 20px auto;
-}
-
-.vie {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px; 
-    width: 80%;
-    margin: 0 auto;
-}
-
-.enfance, .formation, .parcourspro, .futursprojets {
-    width: 100%; 
-    max-width: 600px; 
-    text-align: center;
-    padding: 20px;
-    background-color: white; 
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.enfance {
-    margin-top: -50px;
-}
-
-.enfance img, .formation img, .futursprojets img {
-    width: 100%;
-    height: 272px;
-    object-fit: cover;
-}
-
-.parcourspro img {
-    width: auto;
-    height: 272px; 
-    background-size: cover;
-    background-position: top;
-}
-
-h2 {
-    font-size: 22px;
-    margin-top: 10px;
-}
-
-.enfance p, .formation p, .parcourspro p, .futursprojets p {
-    font-size: 16px;
-    margin-top: 15px;
-    padding: 0 10px;
-    text-align: justify;
-}
-
-.enfance, .formation, .parcourspro, .futursprojets {
-    margin-right: 50px;
-    margin-left: 50px;
-}
-
-.vie, .parcourspro, .vie, .futursprojets {
-    margin-top: 40px; 
-}
-
-/* Version mobile */
+/* Version TABLETTE */
 /*spécial page de présetation à checker*/
-@media all and (max-width: 768px) {
+@media (max-width: 1024px) {
+    body {
+        padding: 0 5%;
+    }
 
-    /* Adaptation du menu de navigation */
     .nav {
         flex-direction: column;
         align-items: center;
-        margin-top: 20px;
     }
 
     .nav ul {
         flex-direction: column;
         gap: 15px;
-        padding: 0;
-        list-style-type: none;
-        align-items: center;
+        padding: 10px 0;
     }
 
     .nav a {
         font-size: 18px;
-        padding: 10px 0;
     }
 
-    .top-image {
-        height: 200px;
-        background-position: center;
+    main {
+        padding: 5%;
+        gap: 50px;
     }
 
-    .top-image h1 {
+    /*page d'accueil*/
+    .banner {
+        height: 160px;
+        margin-top: 50px;
+    }
+
+    .topaccueil h1 {
+        font-size: 36px;
+        margin-top: 30px;
+    }
+
+    .topaccueil p {
+        font-size: 18px;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .engagement-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .nosengagements {
+        width: 45%;
+    }
+
+    .allchiffres {
+        padding: 60px 0;
+        gap: 40px;
+    }
+
+    .bloc-chiffre {
+        width: 200px;
+        height: 180px;
+    }
+
+    .bloc-chiffre h5 {
+        font-size: 45px;
+    }
+
+    .bloc-chiffre p {
+        font-size: 20px;
+    }
+
+    .chiffre-clés h4 {
         font-size: 32px;
+    }
+
+    /* Page de réalisations*/
+
+    .allrealisation h1 {
+        margin-top: 50px;
+    }
+    .explicationrealisation {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .explicationrealisation img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .realisationbloc1, .realisationbloc2,
+    .creationbloc1, .creationbloc2 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .realisation img, .creation img {
+        width: 220px;
+        height: 220px;
+    }
+
+    /*Page de FAq*/
+    .topfaq{
+        margin-top: 60px;
+    }
+
+    .topfaq img{
+        height: 350px;
+    }
+
+    /*page de CONTACT*/
+
+    .adresse {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .adresse-text {
+        margin-left: 0;
+    }
+
+    .maps{
         width: auto;
         height: auto;
-        padding: 10px;
-    }
-
-    /* Galerie */
-    .galerie {
-        flex-direction: column;
-        gap: 20px;
-        margin: 20px 0;
-    }
-
-    .element {
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
-    }
-
-    .img_artiste {
-        width: 100%;
-        height: auto;
-        max-width: 400px;
-    }
-
-    /* Images dans les sections */
-    .paris, .formationines, .experienceproines {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-        margin: 10px 0;
-    }
-
-    /* Sections de texte */
-    .vie h2 {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-
-    .vie p {
-        font-size: 16px;
-        line-height: 1.5;
-        margin: 10px 0;
-    }
-
-    /* Menu sur la section topines */
-    .menuines {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .inesnav {
-        margin-bottom: 20px;
-    }
-
-    .menu ul {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-        padding: 0;
-        list-style-type: none;
-    }
-
-    .menu li {
-        text-align: center;
-    }
-
-    /* Footer */
-    footer {
-        padding: 20px;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    .bas {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .adresse p {
-        font-size: 18px;
-    }
-
-    /* Formulaire */
-    .form_style,
-    .btn {
-        width: 100%;
-        max-width: 300px;
-        margin: 0 auto;
-    }
-
-    .form_group {
-        margin-bottom: 20px;
     }
 
     .contact {
         flex-direction: column;
-        align-items: center;
+        text-align: center;
+        gap: 40px;
     }
 
-    /* Galerie images */
-    .tableau img {
-        width: 100%;
-        max-width: 200px;
-        margin: 20px auto;
-    }
-}
-
-/*pour la page de création à checker*/
-@media (max-width: 768px) {
-    .nav ul {
+    .gauche {
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
 
-    .creationbloc1, .creationbloc2 {
-        flex-direction: column;
+    .herbe {
+        width: 200px;
+        margin-left: 50px;
     }
 
-    .servicebloc1, .servicebloc2, .servicebloc3 {
+    .droite {
         justify-content: center;
     }
 
+    .form_style {
+        width: 90%;
+    }
+
+    .btn {
+        width: 50%;
+        margin-left: 0;
+    }
+
+    .bottom-image {
+        height: 250px;
+    }
+
+    /*Page de service*/
+
+    .creationbloc1, .creationbloc2,
+    .servicebloc1, .servicebloc2, .servicebloc3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .services {
-        width: 45%;
+        width: 90%;
+        text-align: center;
     }
 
-    .explicationcreation {
-        margin: 0;
-        width: 100%;
+    .explicationcreation, .explicationfontaine {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
     }
 
-    .noscreations {
+    .noscreations, .nosfontaines, .nosrealisations h2 {
+        font-size: 28px;
+    }
+
+    .hautcreation h1 {
+        margin-top: 25px;
+        margin-bottom: -50px;
+    }
+
+    .explicationcreation img, .explicationfontaine img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .allservices h3 {
         margin-top: 30px;
+    }
+
+    .contact {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form_style,
+    .btn {
+        width: 100%;
+        max-width: 350px;
+        margin: 10px auto;
     }
 }
 
-@media (max-width: 480px) {
-    .services {
-        width: 100%;
-    }
 
-    .nav ul {
-        display: none;
-    }
-
-    .nav ul li {
-        width: 100%;
-    }
-
-    .menu-deroulant:hover .sous-menu {
-        display: none;
-    }
-
-    .nav ul.active {
-        display: flex;
+/* SMARTPHONES */
+@media (max-width: 768px) {
+    .nav {
         flex-direction: column;
-    }
-
-    .nav ul li a {
-        text-align: center;
+        align-items: center;
         padding: 15px 0;
     }
 
-    .explicationcreation img {
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    main {
+        padding: 5%;
+        gap: 30px;
+    }
+
+    /*page d'accueil*/
+    .banner {
+        height: 150px; 
+        margin-top: 40px;
+    }
+
+    .topaccueil h1 {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .topaccueil p {
+        font-size: 18px;
+        margin-left: 30px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .engagement-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .nosengagements {
+        width: 80%;
+    }
+
+    .allchiffres {
+        padding: 40px 0;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .bloc-chiffre {
+        width: 250px;
+        height: 200px;
+    }
+
+    .bloc-chiffre h5 {
+        font-size: 40px;
+    }
+
+    .bloc-chiffre p {
+        font-size: 18px;
+    }
+
+    .chiffre-clés h4 {
+        font-size: 30px;
+    }
+
+    /* page de réalisations*/
+
+    .allrealisation h1{
+        margin-top: 40px;
+    }
+    .explicationrealisation {
+        gap: 30px;
+    }
+
+    .explicationrealisation p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .realisation img, .creation img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .separator-realisations {
+        width: 80%;
+    }
+
+    /*Page de FAq*/
+    .topfaq{
+        margin-top: 50px;
+    }
+
+    .topfaq img{
+        height: 250px;
+        width: auto;
+    }
+
+    /*Page de CONTACT*/
+
+    .maps{
+        width: auto;
+        height: auto;
+    }
+
+    .nouscontacter img {
+        margin-top: 25px;
+        height: 300px;
+    }
+    .nouscontacter h1 {
+        font-size: 28px;
+        margin-top: 25px;
+    }
+
+    .contact h3 {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    
+    .herbe{
+        margin-left: 50px;
+    }
+
+    .form_style {
         width: 100%;
+        padding-left: 20px;
+    }
+
+    .btn {
+        width: 70%;
+    }
+
+    .bottom-image {
+        height: 200px;
+    }
+
+    /*page de services (ines)*/
+    .explicationcreation, .explicationfontaine img{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header img {
+        width: 100%;
+        height: auto;
+    }
+
+    .services img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+     /*ajustement service-creation*/
+    .hautcreation h1 {
+        margin-top: 40px;
+    }
+
+    .explicationcreation img, .explicationfontaine img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .allservices h3 {
+        margin-top: 20px;
+    }
+
+    /* ajustement pour la page de service fontaine*/
+
+    .allfontain h1 {
+        margin-top: 20px;
+    }
+
+    .allfontain h1, .hautfontaine {
+        margin-top: 10px;
+    }
+
+    .nosfontaines {
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+}
+
+/* PETITS TELS*/
+@media (max-width: 480px)
+{
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .nav a {
+        font-size: 16px;
+    }
+
+    /*Page d'accueil*/
+    .banner {
+        height: 120px;
+        margin-top: 40px;
+    }
+
+    .topaccueil h1 {
+        font-size: 24px;
+        margin-top: 10px;
+    }
+
+    .topaccueil p {
+        font-size: 16px;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+    .engagement h2 {
+        text-align: center;
+    }
+
+    .engagement-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nosengagements {
+        width: 90%;
+    }
+
+    .allchiffres {
+        padding: 30px 0;
+        flex-direction: column; 
+        gap: 20px;
+    }
+
+    .bloc-chiffre {
+        width: 200px; 
+        height: 180px;
+    }
+
+    .bloc-chiffre h5 {
+        font-size: 30px; 
+    }
+
+    .bloc-chiffre p {
+        font-size: 16px;
+    }
+
+    .chiffre-clés h4 {
+        font-size: 25px;
+    }
+
+    /* Page de réalisations*/
+
+    .allrealisation h1{
+        margin-top: 30px;
+    }
+
+    .explicationrealisation {
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px 5%;
+    }
+
+    .explicationrealisation img {
+        width: 100%;
+        height: auto;
+    }
+
+    .realisationbloc1, .realisationbloc2,
+    .creationbloc1, .creationbloc2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .realisation img, .creation img {
+        width: 100%;
+        height: auto;
+        max-width: 300px;
+    }
+
+    .separator-realisations {
+        width: 90%;
+    }
+
+    /*Page de FAq*/
+    .topfaq{
+        margin-top: 40px;
+    }
+
+    .topfaq img{
+        height: 250px;
+    }
+
+    /*Page de CONTACT*/
+    .maps{
+        width: auto;
+        height: auto;
+    }
+
+    .nouscontacter img {
+        margin-top: 25px;
+        height: 300px;
+    }
+    .nouscontacter h1 {
+        font-size: 24px;
+        margin-top: 25px;
+    }
+
+    .adresse {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .gauche {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .herbe {
+        width: 150px;
+        margin-left: 50px;
+    }
+
+    .form_style {
+        width: 100%;
+        padding-left: 10px;
+    }
+
+    .btn {
+        width: 90%;
+    }
+
+    .bottom-image {
+        height: 180px;
+    }
+
+    .insta, .facebook {
+        width: 50px;
+        height: 50px;
+    }
+
+    /*Page de service (ines)*/
+
+    .hautcreation h1 {
+        margin-top: 30px;
+    }
+
+    .explicationcreation img, .explicationfontaine img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .allservices h3 {
+        margin-top: 15px;
+    }
+
+    /* ajustement pour la page de service fontaine*/
+
+    .allfontain h1 {
+        margin-top: 20px;
+    }
+
+    .allfontain h1, .hautfontaine {
+        margin-top: 10px;
+    }
+
+    .services img {
+        max-width: 180px;
+    }
+
+    .form_style,
+    .btn {
+        width: 90%;
+        max-width: 280px;
+        margin: 10px auto;
+    }
+
+    .contact {
+        gap: 20px;
+    }
+
+    .adresse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .adresse-text {
+        margin: 0;
     }
 }

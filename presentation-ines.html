@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400&display=swap" rel="stylesheet">
-        <link href="style.css" rel="stylesheet"/>
+        <link href="style-presentation.css" rel="stylesheet"/>
 
         <!--Open Graph (pour les rs insta fb linkedin...)-->
         <meta property="og:title" content="Inès ABRAM">
@@ -37,7 +37,7 @@
             "@type": "Person",
             "name": "Inès Abram",
             "alternativeName" : "Inès Abram",
-            "descrition": "blabla",
+            "descrition": "Inès Abram est étudiante en licence 3 Information et Communication",
             "birthDate": "2002-04-12",
             "birthPlace": {
                 "@type":"Place",
@@ -63,84 +63,71 @@
     </head>
     <body>
         <header>
-            <img src="images/lucas-jardin-logo.png" alt="Logo du site" class="logo" width="580" height="436" loading="lazy">
-            <nav class="nav">
-                <ul>  
-                    <li><a href="index.html">A propos</a></li>
-                    <li class="menu-deroulant">
-                        <a href="#">Nos Services</a>
-                        <ul class="sous-menu">
-                            <li><a href="service-creation.html">Nos Créations</a></li>
-                            <li><a href="service-installation-de-fontaine.html">Installation de bassins d'eau et fontaines</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="nos-realisations.html">Nos Réalisations</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="contact.html">Nous contacter</a></li>
-                    <li class="menu-deroulant">
-                        <a href="#">Nos Étudiantes</a>
-                        <ul class="sous-menu">
-                            <li><a href="presentation-ines.html">Inès Abram</a></li>
-                            <li><a href="presentation-nom.html">Nom</a></li>
-                            <li><a href="presentation-nom.html">Nom</a></li>
-                            <li><a href="presentation-nom.html">Nom</a></li>
-                            <li><a href="presentation-nom.html">Nom</a></li>
-                            <li><a href="presentation-nom.html">Nom</a></li>
-                        </ul>
-                    </li>
-                </ul> 
+            <div class="banniere-ines">
+                    <h1>Inès Abram - étudiante</h1>
+            </div>
+            <nav class="menu-ines">
+                <ul>
+                    <li><a href="#enfance">Enfance</a></li>
+                    <li><a href="#formation">Parcours et Formations</a></li>
+                    <li><a href="#parcourspro">Expériences Professionnelles</a></li>
+                    <li><a href="#futursprojets">Futurs projets</a></li>
+                </ul>
             </nav>
         </header>
         <hr> <!--comentaire-->
         <main>
-            <section class="topines">
-                <h1>Inès Abram - étudiante</h1>
-                <div class="menuines">
-                    <div class="inesnav">
-                        <img src="images/ines2.webp" alt="ines" class="ines">
-                    </div>
-                    <div class="inesnav">
-                        <nav class="menu">
-                            <ul>
-                                <li><a href="#enfance">Enfance</a></li>
-                                <li><a href="#formation">Parcours et Formations</a></li>
-                                <li><a href="#parcourspro">Expériences Professionnelles</a></li>
-                                <li><a href="#futursprojets">Futurs projets</a></li>
-                            </ul>
-                        </nav>
+            <section class="top-ines">
+                <div class="presentation-ines">
+                        <img src="images/ines2.webp" alt="ines" class="topines-image">
+
+                    <div class="texte-presentation-ines">
+                        <h2>Présentation</h2>
+                        <p>Arrivée en Septembre à Nice, Inès Abram donne tout dans les études.</p>
                     </div>
                 </div>
             </section>
 
-            <hr class="separateur">
-            <div class="vie">
-                <section id="enfance" class="enfance">
+            <hr class="separateur-ines">
+            <div class="vie-ines">
+                <section id="enfance" class="enfance-ines">
                     <h2>Enfance de Inès Abram</h2>
-                    <img src="images/paris.webp" alt="paris" class="paris">
+                    <a href="#"><img src="images/paris.webp" alt="paris" class="paris"></a>
                     <p>Inès Abram est née à Paris, en 2002.</p>
                 </section>
 
-                <section id="formation" class="formation">
+                <section id="formation" class="formation-ines">
                     <h2>Formations</h2>
-                    <img src="images/formationines.webp" alt="formationines" class="formationines">
+                    <a href="#"><img src="images/formationines.webp" alt="formationines" class="formationines"></a>
                     <p>Après une réorientation, elle rejoint la licence Information et communication, au sein du parcours Organisation et stratégie numérique.</p>
                 </section>
 
-                <section id="parcourspro" class="parcourspro">
+                <section id="parcourspro" class="parcourspro-ines">
                     <h2>Expériences Professionnelles</h2>
-                    <img src="images/experience-pro-ines.webp" alt="experienceproines" class="experienceproines">
+                    <a href="#"><img src="images/experience-pro-ines.webp" alt="experienceproines" class="experienceproines"></a>
                     <p>Elle effectue actuellement un stage en communication et événementiel au sein de l'entreprise Hominum Games.</p>
                 </section>
 
-                <section id="images/futursprojets" class="futursprojets">
+                <section id="futursprojets" class="futursprojets-ines">
                     <h2>Projets Futurs</h2>
-                    <img src="images/futurines.webp" alt="furturines" class="futurines">
+                    <a href="#"><img src="images/futurines.webp" alt="furturines" class="futurines"></a>
                     <p>Elle aimerait rejoindre un Master en Alternance.</p>
                 </section>
             </div>
         </main>
         <hr>
         <footer>
-            <p>(c) Inès Abram, étudiante.</p>
+            <h3 class="bas-ines">Les étudiantes</h3>
+            <nav class="nav-ines">
+                <ul> 
+                    <li><a href="presentation-ines.html">Inès Abram</a></li>
+                    <li><a href="presentation-ava.html">Ava Rosset</a></li>
+                    <li><a href="presentation-eva.html">Eva</a></li>
+                    <li><a href="presentation-nomine.html">Nomine</a></li>
+                    <li><a href="presentation-nom.html">Nom</a></li>
+                    <li><a href="presentation-nom.html">Nom</a></li>
+                </ul>  
+            </nav>
+            <p class="bas-ines">(c) Inès Abram, étudiante.</p>
         </footer>
     </body>

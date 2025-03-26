@@ -1,0 +1,814 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Style général pour le corps de la page */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #F9F5F0;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    width: 100%;
+    gap: 100px;
+}
+
+section {
+    width: 100%;
+}
+
+.barre-horizontale {
+    width: 200px;
+    height: 4px;
+    background-color: #545470;
+}
+
+.button-explorer {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: black;
+    /* Couleur du texte */
+    background-color: rgba(255, 255, 255, 0.6);
+    /* Fond semi-transparent */
+    font-family: Arial, sans-serif;
+    /* Police de caractères */
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Effet au survol */
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Menu */
+.navines {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    /* Espace entre les liens */
+    padding: 20px 0;
+}
+
+/* Styles pour chaque lien du menu */
+.navines a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.navines ul {
+    padding: 30px;
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+  }
+
+.navines a:hover {
+    text-decoration: underline;
+}
+
+ /*page de présentation Ines*/
+
+.nav-ines {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.nav-ines a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.nav-ines ul {
+    padding: 30px;
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+  }
+
+.nav-ines a:hover {
+    text-decoration: underline;
+}
+
+.banniere-ines{
+  height: 200px;
+  width: 1000px;
+  background-image: url('images/banniere-ines.webp');
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-ines {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.menu-ines a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.menu-ines ul {
+    padding: 30px;
+    display: flex;
+    list-style-type: none;
+    gap: 100px;
+    margin-top: -25px;
+  }
+  
+  .menu-ines ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+  }
+
+.menu-ines ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #87CEEB;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu-ines ul li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+.top-ines, h1 {
+    text-align: center;
+    line-height: normal;
+    color:#87CEEB;
+    margin-bottom: 26px;
+    font-size: 45px;
+}
+
+.presentation-ines {
+    display: flex;
+    align-items: center;
+    color: #000;
+    gap: 70px;
+    margin: 10px 10%;
+    margin-bottom: 10px;
+}
+
+  .texte-presentation-ines {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start;
+    font-size: 18px;
+    text-align: justify;
+    background-color: #87CEEB;
+    padding: 50px;
+    border-radius: 8px;
+}
+
+.presentation-ines img {
+    margin-top: -80px;
+    margin-bottom: -100px;
+    max-width: 300px;
+    height: auto;
+    margin-right: 40px;
+}
+
+.texte-presentation-ines h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    margin-left: 70px;
+}
+
+.separateur-ines {
+    border: none;
+    height: 3px;
+    background-color:#87CEEB;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.vie-ines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px; 
+    width: 80%;
+    margin: 0 auto;
+}
+
+.vie-ines img {
+    margin-top: 10px;
+  }
+  
+  .vie-ines img:hover {
+    transform: scale(1.1);
+  }
+
+.enfance-ines, .formation-ines, .parcourspro-ines, .futursprojets-ines {
+    width: 100%; 
+    max-width: 600px; 
+    text-align: center;
+    padding: 20px;
+    background-color:#87CEEB; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.enfance-ines {
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.enfance-ines img, .formation-ines img, .futursprojets-ines img {
+    width: 100%;
+    height: 272px;
+    object-fit: cover;
+}
+
+.parcourspro-ines img {
+    width: auto;
+    height: 272px; 
+    background-size: cover;
+    background-position: top;
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.enfance-ines p, .formation-ines p, .parcourspro-ines p, .futursprojets-ines p {
+    font-size: 16px;
+    margin-top: 15px;
+    padding: 0 10px;
+    text-align: justify;
+}
+
+.enfance-ines, .formation-ines, .parcourspro-ines, .futursprojets-ines {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.vie-ines, .parcourspro-ines, .vie-ines, .futursprojets-ines {
+    margin-top: 40px; 
+}
+
+.bas-ines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #F9F5F0;
+    width: 100%;
+}
+  /*page de présentation Eva*/
+
+.nav ul {
+    list-style: none !important;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+.topines, h1 {
+    text-align: center;
+    line-height: normal;
+    margin-bottom: 26px;
+    font-size: 32px;
+    margin-top: -45px;
+    margin-bottom: 50px;
+}
+
+.menuines {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    margin: 10px 10%;
+    margin-bottom: 10px;
+}
+
+.menuines img{
+    width: auto;
+    height: 467px;
+  }
+
+.menuines {
+    display: flex;
+    justify-content: space-around;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+  }
+  .menuines {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inesnav img {
+    margin-top: 50px;
+    margin-bottom: -100px;
+    max-width: 300px;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: -150px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.menu ul li {
+    margin-bottom: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.separateur {
+    border: none;
+    height: 3px;
+    background-color: black;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.vie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px; 
+    width: 80%;
+    margin: 0 auto;
+}
+
+.enfance, .formation, .parcourspro, .futursprojets {
+    width: 100%; 
+    max-width: 600px; 
+    text-align: center;
+    padding: 20px;
+    background-color: white; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.enfance {
+    margin-top: -50px;
+}
+
+.enfance img, .formation img, .futursprojets img {
+    width: 100%;
+    height: 272px;
+    object-fit: cover;
+}
+
+.parcourspro img {
+    width: auto;
+    height: 272px; 
+    background-size: cover;
+    background-position: top;
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.enfance p, .formation p, .parcourspro p, .futursprojets p {
+    font-size: 16px;
+    margin-top: 15px;
+    padding: 0 10px;
+    text-align: justify;
+}
+
+.enfance, .formation, .parcourspro, .futursprojets {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.vie, .parcourspro, .vie, .futursprojets {
+    margin-top: 40px; 
+}
+
+/* Version Tablette */
+/*spécial page de présetation à checker*/
+/* ================== TABLETTES ================== */
+@media (max-width: 1024px) {
+    body {
+        padding: 0 5%;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    .nav a {
+        font-size: 18px;
+    }
+    main {
+        padding: 5%;
+        gap: 50px;
+    }
+
+    /*page de Inès*/
+    .nav-ines {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-ines ul {
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    .nav-ines a {
+        font-size: 18px;
+    }
+    main {
+        padding: 5%;
+        gap: 50px;
+    }
+    .banniere-ines {
+        width: 100%;
+        height: 180px;
+    }
+
+    .menu-ines {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu-ines ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .top-ines, h1 {
+        font-size: 36px;
+    }
+
+    .top-ines img {
+        max-width: 100%;
+        height: auto; 
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .texte-presentation-ines {
+        font-size: 20px;
+        padding: 30px;
+        margin-top: 100px;
+    }
+
+    .presentation-ines {
+        flex-direction: column; 
+        gap: 20px;
+        margin: 10px 5%;
+    }
+
+    .texte-presentation-ines h2 {
+        font-size: 24px;
+        max-width: 100%;
+    }
+    .top-ines img {
+        max-width: 100%;
+        height: auto; 
+        margin: 0 auto;
+        display: block;
+    }
+
+    .vie-ines {
+        width: 90%;
+        gap: 30px;
+    }
+
+    .vie-ines img {
+        max-width: 100%;
+    }
+
+    .enfance-ines, .formation-ines, .parcourspro-ines, .futursprojets-ines {
+        width: 100%;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .enfance-ines img, .formation-ines img, .futursprojets-ines img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* ================== MOBILES ================== */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        padding: 5%;
+        gap: 30px;
+    }
+    /*page de Inès*/
+    .nav-ines {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    .nav-ines ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        padding: 5%;
+        gap: 30px;
+    }
+
+    .banniere-ines {
+        width: 100%;
+        height: 150px;
+    }
+
+    .menu-ines {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu-ines ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .top-ines, h1 {
+        font-size: 28px;
+    }
+
+    .top-ines img {
+        max-width: 100%;
+        height: auto; 
+        margin: 0 auto;
+        display: block;
+    }
+
+    .texte-presentation-ines {
+        font-size: 18px;
+        padding: 20px;
+        margin-top: 90px;
+    }
+
+    .presentation-ines {
+        flex-direction: column;
+        gap: 15px;
+        margin: 10px 3%;
+    }
+
+    .texte-presentation-ines h2 {
+        font-size: 20px;
+        margin-left: 110px;
+    }
+
+    .vie-ines {
+        width: 90%;
+        gap: 20px;
+    }
+
+    .vie-ines img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .enfance-ines, .formation-ines, .parcourspro-ines, .futursprojets-ines {
+        width: 100%;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .enfance-ines img, .formation-ines img, .futursprojets-ines img {
+        width: 100%;
+        height: auto;
+    }
+    
+    /*section page de presentation eva*/
+
+    .topines {
+        display: block;
+        align-content: center;
+        margin-top: 15px;
+    }
+
+    .inesnav {
+        width: 100%;
+        margin-bottom: 5px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menuines {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+        margin: 10px 10%;
+        margin-bottom: 30px;
+    }
+
+    .menuines img {
+        width: 80%;
+        height: auto;
+    }
+
+    .vie {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .enfance, .formation, .parcourspro, .futursprojets {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .enfance img, .formation img, .parcourspro img, .futursprojets img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* ================== PETITS ÉCRANS (Téléphones) ================== */
+@media (max-width: 480px)
+{
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .nav a {
+        font-size: 16px;
+    }
+
+/*page de Inès*/
+
+.nav-ines {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .nav-ines ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .nav-ines a {
+        font-size: 16px;
+    }
+
+    /*section page de présentation Inès*/
+    
+    .top-ines h1 {
+        font-size: 24px;
+        margin-top: 15px;
+    }
+    
+    .vie-ines {
+        gap: 15px;
+    }
+    
+    .vie-ines h2 {
+        font-size: 20px;
+    }
+    
+    .vie-ines p {
+        font-size: 14px;
+        padding: 0 5%;
+    }
+    
+        /*section page de présentation eva*/
+    .topines h1 {
+        font-size: 24px;
+        margin-top: 15px;
+    }
+    
+    .vie {
+        gap: 15px;
+    }
+    
+    .vie h2 {
+        font-size: 20px;
+    }
+    
+    .vie p {
+        font-size: 14px;
+        padding: 0 5%;
+    }
+    
+    .etudiante img {
+        max-width: 180px;
+    }
+}
