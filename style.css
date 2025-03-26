@@ -816,6 +816,122 @@ p {
     font-family: "Inter";
 }
 
+.gallery {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.flowers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+    height: 300px;
+}
+
+.artwork div.tableau {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    /* Hauteur fixe pour toutes les images */
+    object-fit: cover;
+    background-size: cover;
+    /* Adapte l'image pour qu'elle remplisse le conteneur sans distorsion */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+}
+
+.flowers div.tableau {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    /* Hauteur fixe pour toutes les images */
+    object-fit: cover;
+    background-size: cover;
+    /* Adapte l'image pour qu'elle remplisse le conteneur sans distorsion */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+}
+
+.flowers div.tableau:hover .flowers-details {
+    display: flex;
+}
+
+#jasmin {
+    background-image: url("images/jasmin.png");
+}
+
+#bougainvillier {
+    background-image: url("images/bougainvillier.png");
+}
+
+#viorne {
+    background-image: url("images/viorne.png");
+}
+
+#rosiers {
+    background-image: url("images/rosiers.png");
+}
+
+#anémone {
+    background-image: url("images/anemone.png");
+}
+
+#lavande {
+    background-image: url("images/lavande.png");
+}
+
+#freesia {
+    background-image: url("images/freesia.png");
+}
+
+#clivia {
+    background-image: url("images/clivia.png");
+}
+
+#bégonia {
+    background-image: url("images/begonia.png");
+}
+
+
+
+.flowers-details {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    background-color: rgba(45, 45, 47, 0.8);
+    color: white;
+    text-align: center;
+    font-family: Inter;
+    padding: 10px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    bottom: 0;
+}
+
+.flowers-title {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    margin-top: 10px;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+}
+
 
 
 
