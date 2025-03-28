@@ -70,7 +70,7 @@ section {
     /* Couleur du texte */
     background-color: rgba(255, 255, 255, 0.6);
     /* Fond semi-transparent */
-    font-family: Arial, sans-serif;
+    font-family: Inter;
     /* Police de caractères */
     text-align: center;
     background-size: cover;
@@ -900,7 +900,6 @@ p {
 #bégonia {
     background-image: url("images/begonia.png");
 }
-
 
 
 .flowers-details {
