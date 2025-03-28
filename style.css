@@ -252,7 +252,7 @@ section {
 .bloc-chiffre h5 {
     font-size: 50px;
     margin: 0;
-    color: #4CAF50;
+    color: #66A766;
 }
 
 .bloc-chiffre p {
@@ -350,7 +350,7 @@ section {
     }
     
 .form_style {
-      background-color: #4CAF50;
+      background-color: #66A766;
       border: none;
       margin: 15px;
       height: 40px;
@@ -365,7 +365,7 @@ section {
     }
     
 .btn {
-      background-color: #4CAF50;
+      background-color: #66A766;
       border: none;
       margin: 15px;
       height: 40px;
@@ -425,7 +425,7 @@ section {
 .banniere h1{
     text-align: center;
     margin-top:40px;
-    background-color: #4CAF50;
+    background-color: #66A766;
     width: 575px;
     height: auto;
 }
@@ -440,7 +440,7 @@ section {
 .separator-realisations{
     border: none;
     height: 3px;
-    background-color: #4CAF50; 
+    background-color: #66A766; 
     margin-top: -10px;
     margin-bottom: 30px;
     width: 70%;
@@ -544,7 +544,7 @@ section {
 .separator {
     border: none;
     height: 3px;
-    background-color: #4CAF50; 
+    background-color: #66A766; 
     margin: 50px 0;
     width: 70%;
     text-align: left;
@@ -553,7 +553,7 @@ section {
 .separator3 {
     border: none;
     height: 3px;
-    background-color: #4CAF50;
+    background-color: #66A766;
     margin: 5px auto 10px auto;
     width: 80%;
 }
@@ -614,7 +614,7 @@ section {
 .separatorfontaine {
     border: none;
     height: 3px;
-    background-color: #4CAF50; 
+    background-color: #66A766; 
     margin-top: -10px;
     margin-bottom: 30px;
     width: 70%;
@@ -675,7 +675,7 @@ section {
     margin-bottom: 25px;
     border: none;
     height: 3px;
-    background-color: #4CAF50;
+    background-color: #66A766;
     width: 70%;
     text-align: center;
     margin-left: 15%;
@@ -686,7 +686,7 @@ section {
     margin-bottom: 50px;
     border: none;
     height: 3px;
-    background-color: #4CAF50;
+    background-color: #66A766;
     width: 70%;
     text-align: center;
     margin-left: 15%;
@@ -706,7 +706,7 @@ section {
 .faq h1 {
     position: absolute;
     color:#F9F5F0;
-    background-color:#4CAF50;
+    background-color:#66A766;
     font-size: 36px;
     font-weight: bold;
 }
@@ -761,7 +761,7 @@ section {
     color: #F9F5F0;
     text-decoration: none;
     margin-bottom: 50px;
-    background-color: #4CAF50;
+    background-color: #66A766;
     padding: 15px;
     border-radius: 10px;
 }
