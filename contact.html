@@ -15,19 +15,29 @@
         <header>
             <img src="images/lucas-jardin-logo.png" alt="Logo du site" class="logo" width="580" height="436" loading="lazy">
             <nav class="nav">
-                <ul> 
-                    <li><a href="index.html">ACCUEIL</a></li>
+                <ul>
+                    <li><a href="index.html" title="Accueil du site">ACCUEIL</a></li>
                     <li class="menu-deroulant">
                         <a href="#">NOS SERVICES</a>
                         <ul class="sous-menu">
-                            <li><a href="service-creation.html">NOS CRÉATIONS</a></li>
+                            <li><a href="service-creation.html">Nos Créations et entretiens</a></li>
+                            <li><a href="service-systeme-arrosage.html">Système d'Arrosage</a></li>
+                            <li><a href="service-elagage.html">Élagage</a></li>
+                            <li><a href="service-taille-vegetaux.html">Taille de végétaux</a></li>
+                            <li><a href="service-debroussaillage.html">Débroussaillage</a></li>
                             <li><a href="service-installation-de-fontaine.html">Installation de bassins d'eau et fontaines</a></li>
+                            <li><a href="service-mursvegetaux.html">Murs Végétaux</a></li>
+                            <li><a href="service-traitementpalmier.html">Traitement de palmiers</a></li>
+                            <li><a href="service-plantation.html">Plantations</a></li>
+                            <li><a href="service-fleurs.html">Nos variétés de fleurs</a></li>
+                            <li><a href="service-fruits.html">Nos variétés de fruits</a></li>
+                            <li><a href="service-arbres.html">Nos variétés d'arbres</a></li>
                         </ul>
                     </li>
-                    <li><a href="nos-realisations.html">NOS RÉALISATIONS</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                    <li><a href="#contact">NOUS CONTACTER</a></li>
-                </ul>  
+                    <li><a href="nos-realisations.html" title="?">NOS RÉALISATIONS</a></li>
+                    <li><a href="faq.html" title="?">FAQ</a></li>
+                    <li><a href="#contact" title="?">NOUS CONTACTER</a></li>
+                </ul>
             </nav>
         </header>
         <br>
@@ -41,45 +51,52 @@
                 <div class="adresse">
                     <div class="adresse-text">
                         <h2>Nous trouver</h2>
-                        <p>102 Chemin du Génie, 06000 Nice</p>
+                        <p>102 Chemin du Génie, <br> 06000 Nice</p>
                     </div>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2882.629865160428!2d7.218366074670688!3d43.7390154468785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdce4b65e8d001%3A0x44d604e781a67824!2s102%20Chem.%20du%20G%C3%A9nie%2C%2006000%20Nice!5e0!3m2!1sfr!2sfr!4v1741612984455!5m2!1sfr!2sfr" class="maps" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </section>
-                <br>
-            <section class="contact">
-                <div class="gauche">
-                    <img src="images/herbe.webp" class="herbe" alt="herbe" width="286" height="286" loading="lazy">
-                </div>
-                <div class="droite">
-                    <div class="container">
-                        <div class="form_area">
-                            <h3>Nous contacter</h3>
-                            <form action="#" onsubmit="affiche_information(event)" name="information">
-                                <div class="form_group">
-                                    <input id="nom"  class="form_style" type="text" placeholder="Nom">
-                                </div>
-                                <div class="form_group">
-                                    <input id="prenom" class="form_style" type="text" placeholder="Prénom">
-                                </div>
-                                <div class="form_group">
-                                    <input id="mail" class="form_style" type="email" placeholder="Email">
-                                </div>
-                                <button type="submit" class="btn">S'inscrire</button>
-                            </form>
-                            <script>
-                                
-                                   function affiche_information(event) {
-                                    event.preventDefault();
-                                   // variables
-                                     let first_name = document.getElementById("nom").value;
-                                     let last_name = document.getElementById("prenom").value;
-                                     let email = document.getElementById("mail").value;
-                                     
-                                     //affichage
-                                     alert("Voici les informations que nous avons récupéré: \n\nNom: "+first_name+ "\nPrénom: " +last_name+ "\nEmail: " +email+ "\n\nMerci de votre inscription");
-                                   }
-                                </script>
+
+            <section class="nous-ecrire">
+                <hr class="separator-realisations">
+                <h3>Nous écrire</h3>
+                <div class="contact">
+                    <div class="gauche">
+                        <img src="images/herbe.webp" class="herbe" alt="herbe" width="286" height="286" loading="lazy">
+                    </div>
+                    <div class="droite">
+                        <div class="container">
+                            <div class="form_area">
+                                <form action="#" onsubmit="affiche_information(event)" name="information">
+                                    <div class="form_group">
+                                        <input id="nom"  class="form_style" type="text" placeholder="Nom">
+                                    </div>
+                                    <div class="form_group">
+                                        <input id="prenom" class="form_style" type="text" placeholder="Prénom">
+                                    </div>
+                                    <div class="form_group">
+                                        <input id="mail" class="form_style" type="email" placeholder="Email">
+                                    </div>
+                                    <div class="form_group">
+                                        <textarea id="demande" class="form_style" placeholder="Votre Demande spécifique"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn">Envoyer</button>
+                                </form>
+                                <script>
+                                    
+                                    function affiche_information(event) {
+                                        event.preventDefault();
+                                    // variables
+                                        let first_name = document.getElementById("nom").value;
+                                        let last_name = document.getElementById("prenom").value;
+                                        let email = document.getElementById("mail").value;
+                                        let demande = document.getElementById("demande").value;
+                                        
+                                        //affichage
+                                        alert("Voici les informations que nous avons récupéré: \n\nNom: "+first_name+ "\nPrénom: " +last_name+ "\nEmail: " +email+ "\nDemande spécifique: " + demande + "\n\nMerci de votre soumission, vous recevrez une réponse dans un délai de 7 jours ouvrés.");
+                                    }
+                                    </script>
+                            </div>
                         </div>
                     </div>
                 </div>
