@@ -89,6 +89,7 @@ section {
 .nav {
     display: flex;
     justify-content: center;
+    justify-content: flex-start;
     gap: 30px;
     /* Espace entre les liens */
     padding: 20px 0;
@@ -98,9 +99,8 @@ section {
 .nav a {
     display: flex;
     align-items: center;
-    justify-content: center;
     color: #000;
-    text-align: center;
+    text-align: left;
     font-family: Inter;
     font-size: 15px;
     font-style: normal;
@@ -110,7 +110,7 @@ section {
 }
 
 .nav ul {
-    padding: 30px;
+    padding: 10px;
     display: flex;
     list-style-type: none;
     gap: 40px;
@@ -124,6 +124,7 @@ section {
 .sous-menu li {
     width: 200px;
     text-align: left;
+    left: 0;
 }
 
 .sous-menu a {
@@ -284,15 +285,17 @@ section {
     align-items: center;
     text-align: center;
     margin-bottom: 50px;
+    margin-top: -70px;
 }
 
 .nouscontacter h1 {
     position: absolute;
+    margin-top: 70px;
     color: black;
-    font-size: 36px;
+    background-color: rgba(255, 255, 255, 0.6);
+    font-size: 40px;
     font-weight: bold;
 }
-
 
 /*adresse*/
 
@@ -305,12 +308,18 @@ section {
 
 .adresse-text{
     margin-left: 35px;
+    background-color: #66A766;
+    padding: 60px;
+    margin-right: 20px;
+    text-align: center;
+    margin-bottom: -25px;
 }
 
 .contact {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: -50px;
     gap: 30px;
 }
 
@@ -339,38 +348,51 @@ section {
     justify-content: space-around;
 }
     
-.contact h3 {
+.nous-ecrire h3 {
       color: rgb(0, 0, 0);
       text-align: center;
-      font-size: 28px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      margin-bottom: 65px;
+      font-size: 32px;
+      font-style: bold;
+      margin-bottom: 80px;
+      margin-top: 50px;
     }
     
-.form_style {
-      background-color: #66A766;
-      border: none;
-      margin: 15px;
-      height: 40px;
-      width: 328px;
-      text-align: left;
+    .form_style {
+        background-color: #66A766;
+        border: none;
+        margin: 15px;
+        height: 40px;
+        width: 328px;
+        text-align: left;
+        padding-left: 15px;
+        color: white !important;
+        font-size: 16px;
     }
     
-.form_style,
-    textarea {
-      text-align: left;
-      padding-left: 45px;
+    textarea.form_style {
+        height: 100px;
+        color: white !important;
+        padding-top: 10px;
+    }
+
+    .form_style::placeholder {
+        color: rgba(255, 255, 255, 0.7);
     }
     
-.btn {
-      background-color: #66A766;
-      border: none;
-      margin: 15px;
-      height: 40px;
-      width: 167px;
-      margin-left: 180px;
+    .btn {
+        background-color: #66A766;
+        border: none;
+        margin: 15px;
+        height: 40px;
+        width: 167px;
+        margin-left: 180px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        background-color: #559155;
     }
 
 /*bottom*/
@@ -474,7 +496,11 @@ section {
 }
 
 .explicationcreation p{
-    font-size: 18px;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.5;
+    width: auto;
+    margin-top: -30px;
 }
 
 .noscreations, .nosfontaines, .nosrealisation, h2, h3{
@@ -530,10 +556,11 @@ section {
 
 .conceptionexplication {
     margin-bottom: 15px;
+    line-height: 1.5;
 }
 
 .conceptionexplication p{
-    font-size: 18px;
+    font-size: 16px;
     text-align: justify;
 }
 
@@ -630,6 +657,7 @@ section {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .etapefontaine {
@@ -692,7 +720,7 @@ section {
     margin-left: 15%;
 }
 
-/*page de faq à finir*/
+/*page de faq*/
 .topfaq {
     position: relative;
     display: flex;
@@ -1101,10 +1129,10 @@ p {
         height: 250px;
     }
 
-    /*Page de service*/
+    /*Page de service ines */
 
     .creationbloc1, .creationbloc2,
-    .servicebloc1, .servicebloc2, .servicebloc3 {
+    .servicebloc1, .servicebloc2, .servicebloc3, .alletapefontaine {
         flex-direction: column;
         align-items: center;
     }
@@ -1125,7 +1153,7 @@ p {
     }
 
     .hautcreation h1 {
-        margin-top: 25px;
+        margin-top: 50px;
         margin-bottom: -50px;
     }
 
@@ -1138,6 +1166,44 @@ p {
 
     .allservices h3 {
         margin-top: 30px;
+    }
+
+    .banniere{
+        margin-top: 50px;
+        width: auto;
+        max-width: fit-content;
+    }
+
+    .banniere h1{
+        width: auto;
+    }
+
+    .explicationfontaine p {
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    .separatorfontaine{
+        margin-top: 50px;
+    }
+
+    .bloc-etape {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .etapefontaine {
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .etapefontaine h3{
+        margin-top: 20px;
+    }
+
+    .basfontaine p, .allservices p {
+        margin-top: 15px;
     }
 
     .contact {
@@ -1313,9 +1379,13 @@ p {
         max-width: 200px;
     }
 
+    .basfontaine p, .allservices p {
+        margin-top: 15px;
+    }
+
      /*ajustement service-creation*/
     .hautcreation h1 {
-        margin-top: 40px;
+        margin-top: 60px;
     }
 
     .explicationcreation img, .explicationfontaine img {
@@ -1331,6 +1401,16 @@ p {
 
     /* ajustement pour la page de service fontaine*/
 
+    .banniere {
+        margin-top: 70px;
+        width: auto;
+        max-width: fit-content;
+    }
+
+    .banniere h1{
+        width: auto;
+    }
+
     .allfontain h1 {
         margin-top: 20px;
     }
@@ -1339,9 +1419,33 @@ p {
         margin-top: 10px;
     }
 
+    .explicationfontaine p {
+        text-align: justify;
+        line-height: 1.5;
+    }
+
     .nosfontaines {
         margin-top: 40px;
         margin-bottom: 50px;
+    }
+
+    .separatorfontaine{
+        margin-top: 50px;
+    }
+
+    .bloc-etape {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .etapefontaine {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .etapefontaine h3{
+        margin-top: 15px;
     }
 
 }
@@ -1516,7 +1620,7 @@ p {
     /*Page de service (ines)*/
 
     .hautcreation h1 {
-        margin-top: 30px;
+        margin-top: 50px;
     }
 
     .explicationcreation img, .explicationfontaine img {
@@ -1530,7 +1634,25 @@ p {
         margin-top: 15px;
     }
 
+    .basfontaine p, .allservices p {
+        margin-top: 15px;
+    }
+
     /* ajustement pour la page de service fontaine*/
+
+    .banniere{
+        margin-top: 50px;
+        width: auto;
+        max-width: fit-content;
+    }
+
+    .banniere h1{
+        width: auto;
+    }
+
+    .separatorfontaine{
+        margin-top: 50px;
+    }
 
     .allfontain h1 {
         margin-top: 20px;
@@ -1542,6 +1664,26 @@ p {
 
     .services img {
         max-width: 180px;
+    }
+
+    .explicationfontaine p {
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    .bloc-etape {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .etapefontaine {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .etapefontaine h3{
+        margin-top: 15px;
     }
 
     .form_style,
