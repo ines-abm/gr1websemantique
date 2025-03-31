@@ -916,7 +916,7 @@ div.tableau {
     position: relative;
 }
 
-.flowers .fruits div.tableau {
+.flowers  div.tableau {
     cursor: pointer;
     width: 100%;
     height: 100%;
@@ -1064,22 +1064,46 @@ div.tableau {
 .gallery1 {
     display: grid;
     justify-content: center;
-    align-items: center;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
 
-div.tableau {
+div.tableaux {
     cursor: pointer;
     width: 100%;
     height: 100%;
+    /* Hauteur fixe pour toutes les images */
     object-fit: cover;
     background-size: cover;
+    /* Adapte l'image pour qu'elle remplisse le conteneur sans distorsion */
     display: flex;
     justify-content: center;
     align-items: end;
     position: relative;
 }
+
+
+
+
+.fruits  div.tableaux {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    /* Hauteur fixe pour toutes les images */
+    object-fit: cover;
+    background-size: cover;
+    /* Adapte l'image pour qu'elle remplisse le conteneur sans distorsion */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+}
+
+.fruits div.tableaux:hover .fruits-details {
+    display: flex;
+}
+
+
 
 /* Styles pour les détails des fruits */
 .fruits-details {
@@ -1101,12 +1125,12 @@ div.tableau {
 }
 
 
-.tableau:hover .fruits-details {
+.tableaux:hover .fruits-details {
     display: flex;
 }
 
 /* Styles pour les titres des fruits */
-.fruit-texte {
+.fruits-texte {
     color: #000;
     text-align: center;
     font-family: "Inclusive Sans";
@@ -1119,9 +1143,19 @@ div.tableau {
 
 #figuier {
     background-image: url("images/figuier.png");
+    width: 100%;
+    height: 200px; 
+    background-size: cover;
+    background-position: center;
 }
 
-
+#groseilier {
+    background-image: url("images/groseilier.png");
+    width: 300%;
+    height: 200px; 
+    background-size: cover;
+    background-position: center;
+}
 
 .traitement-palmiers h1 {
     color: #000;
