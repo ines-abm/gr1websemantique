@@ -1168,6 +1168,194 @@ div.tableaux {
     background-position: center;
 }
 
+#prunier{
+    background-image: url("prunier.png");
+    width: 100%;
+    height: 200px; 
+    background-size: cover;
+    background-position: center;
+}  
+
+#pommier{
+    background-image: url("pommier.png");
+    width: 100%;
+    height: 200px; 
+    background-size: cover;
+    background-position: center;
+}  
+
+#poirier{
+    background-image: url("poirier.png");
+    width: 100%;
+    height: 200px; 
+    background-size: cover;
+    background-position: center;
+}  
+
+#mimosa{
+    background-image: url("mimosa.png");
+    width: 100%;
+    height: 200px; 
+    background-size: cover;
+    background-position: center;
+}  
+
+#cheneblanc{
+    background-image: url("cheneblanc.png");
+    width: 100%;
+    height: 200px; 
+    background-size: cover;
+    background-position: center;
+}  
+
+#cactus{
+    background-image: url("cactus.png");
+    width: 100%;
+    height: 200px; 
+    background-size: cover;
+    background-position: center;
+}  
+
+.traitement-palmiers h1 {
+    color: #000;
+    font-size: 30px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    padding-top: 40px;
+    padding-right: 38%;
+}
+
+
+.content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+
+.text-container {
+    flex: 1;
+}
+
+
+/*Soins*/
+.galleryie {
+    display: grid;
+    justify-content: center;
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.nos-soins {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.soins-details {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    background-color: rgba(45, 45, 47, 0.8);
+    color: white;
+    text-align: center;
+    font-family: Inter;
+    padding: 10px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    bottom: 0;
+}
+
+.soins-texte {
+    color: #000;
+    text-align: center;
+    font-family: "Inclusive Sans";
+    margin-top: 10px;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.soins-arbre {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    background-color: rgba(45, 45, 47, 0.8);
+    color: white;
+    text-align: center;
+    font-family: Inter;
+    padding: 10px;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    bottom: 0;
+}
+
+#insecticidebiologique {
+    background-image: url("insecticidebiologique.png");
+    width: 100%;
+    height: 200px; 
+    background-size: cover;
+    background-position: center;
+}
+
+#savonnoir {
+    background-image: url("savonnoir.png");
+    width: 100%;
+    height: 200px; 
+    background-size: cover;
+    background-position: center;
+}
+
+#Oriange® {
+    background-image: url("Oriange®.png");
+    width: 100%;
+    height: 200px; 
+    background-size: cover;
+    background-position: center;
+}
+
+#Engraisagrumesetplatesgranulé {
+    background-image: url("Engraisagrumesetplatesgranulé.png");
+    width: 100%;
+    height: 200px; 
+    background-size: cover;
+    background-position: center;
+}
+
+#Pailledemiscanthus {
+    background-image: url("Pailledemiscanthus.png");
+    width: 100%;
+    height: 200px; 
+    background-size: cover;
+    background-position: center;
+}
+
+#PurindePrêles {
+    background-image: url("PurindePrêles.png");
+    width: 100%;
+    height: 200px; 
+    background-size: cover;
+    background-position: center;
+} 
+
+
+
+
+
+
 /* traitement palmiers*/
 
 .traitement-palmiers h1 {
