@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ava ROSSET</title>
+        <meta name="description" content="Inès Abram est étudiante en Licence 3 Infocom">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@400&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet"/>
+
+        <!--Open Graph (pour les rs insta fb linkedin...)-->
+        <meta property="og:title" content="Ava ROSSET">
+        <meta property="og:description" content="Ava Rosset est étudiante en Licence 3 Infocom">
+        <meta property="og:url" content="https://exemple.fr/Websemantique_page1_IA.html">
+        <meta property="type" content="profile">
+        <meta property="profile:first_name" content="Ava">
+        <meta property="profile:last_name" content="Rosset">
+        <meta property="profile:gender" content="female">
+        <meta property="profile:username" content="exemple_">
+        <meta property="og:image" content="https://exemple.fr/assets/images/photo-exemple.png">
+        <meta property="og:site_name" content="exemple_nom_du_site">
+
+        <!--Twitter Cards-->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Ava Rosser">
+        <meta name="twitter:description" content="Inès Abram est étudiante en Licence 3 Infocom">
+        <meta name="twitter:image" content="https://exemple.fr/assets/images/photo-exemple.png">
+        <meta name="twitter:creator" content="@exemple_nom_twitter"> <!--Compte twitter de la peronne-->
+        <meta name="twitter:site" content="@exemple_nom_entreprise"><!--Compte twitter de l'établissment-->
+
+        <!--json page ines-->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Ava Rosset",
+            "alternativeName" : "Ava Rosset",
+            "descrition": "Ava Rosset est une étudiante à l'université Côte d'azur",
+            "birthDate": "2003-11-24",
+            "birthPlace": {
+                "@type":"Place",
+                "name":"agnes-sur-mer, France",
+                "adress":{
+                    "@type":"PostalAddress",
+                    "adressLocality":"Nice",
+                    "adressCountry":"FR"
+                }
+            },
+            "nationality":"française",
+            "gender":"Féminin",
+            "height":"1.65m",
+            "url":"https://ines-abm.github.io/groupe-b.github.io/",
+            "sameAs":[
+                "https://www.test.com"
+            ],
+            "jobtitle":"Etudiante"
+            
+        }
+        </script>
+
+    </head>
+    <body>
+        <header>
+            <img src="images/lucas-jardin-logo.png" alt="Logo du site" class="logo" width="580" height="436" loading="lazy">
+            <nav class="nav">
+                <ul>  
+                    <li><a href="index.html">A propos</a></li>
+                    <li class="menu-deroulant">
+                        <a href="#">Nos Services</a>
+                        <ul class="sous-menu">
+                            <li><a href="service-creation.html">Nos Créations</a></li>
+                            <li><a href="service-installation-de-fontaine.html">Installation de bassins d'eau et fontaines</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="nos-realisations.html">Nos Réalisations</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Nous contacter</a></li>
+                    <li class="menu-deroulant">
+                        <a href="#">Nos Étudiantes</a>
+                        <ul class="sous-menu">
+                            <li><a href="presentation-ines.html">Inès Abram</a></li>
+                            <li><a href="presentation-ava.html">Ava Rosset</a></li>
+                            <li><a href="presentation-nom.html">Nom</a></li>
+                            <li><a href="presentation-nom.html">Nom</a></li>
+                            <li><a href="presentation-nom.html">Nom</a></li>
+                            <li><a href="presentation-nom.html">Nom</a></li>
+                        </ul>
+                    </li>
+                </ul> 
+            </nav>
+        </header>
+        <hr> <!--commentaire-->
+        <main>
+            <section class="topines">
+                <h1>Ava Rosset - étudiante</h1>
+                <div class="menuines">
+                    <div class="inesnav">
+                        <img src="images/ines2.webp" alt="ines" class="ines">
+                    </div>
+                    <div class="inesnav">
+                        <nav class="menu">
+                            <ul>
+                                <li><a href="#enfance">Enfance</a></li>
+                                <li><a href="#formation">Parcours et Formations</a></li>
+                                <li><a href="#parcourspro">Expériences Professionnelles</a></li>
+                                <li><a href="#futursprojets">Futurs projets</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="separateur">
+            <div class="vie">
+                <section id="enfance" class="enfance">
+                    <h2>Enfance de Inès Abram</h2>
+                    <img src="images/paris.webp" alt="paris" class="paris">
+                    <p>Inès Abram est née à Paris, en 2002.</p>
+                </section>
+
+                <section id="formation" class="formation">
+                    <h2>Formations</h2>
+                    <img src="images/formationines.webp" alt="formationines" class="formationines">
+                    <p>Après une réorientation, elle rejoint la licence Information et communication, au sein du parcours Organisation et stratégie numérique.</p>
+                </section>
+
+                <section id="parcourspro" class="parcourspro">
+                    <h2>Expériences Professionnelles</h2>
+                    <img src="images/experience-pro-ines.webp" alt="experienceproines" class="experienceproines">
+                    <p>Elle effectue actuellement un stage en communication et événementiel au sein de l'entreprise Hominum Games.</p>
+                </section>
+
+                <section id="images/futursprojets" class="futursprojets">
+                    <h2>Projets Futurs</h2>
+                    <img src="images/futurines.webp" alt="furturines" class="futurines">
+                    <p>Elle aimerait rejoindre un Master en Alternance.</p>
+                </section>
+            </div>
+        </main>
+        <hr>
+        <footer>
+            <p>(c) Inès Abram, étudiante.</p>
+        </footer>
+    </body>
