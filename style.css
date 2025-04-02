@@ -1615,6 +1615,7 @@ div.tableaux {
     
 }
 
+
 .nossystemes img {
     height: 200px;
     width: 250px;
@@ -1628,6 +1629,20 @@ div.tableaux {
 .paragraphe p{
     font-family: Inter;
     font-size: 15px;
+}
+
+.tuyaux-container h1 {
+    padding-left: 50px;
+}
+.tuyaux-container p {
+    padding-left: 50px;
+}
+
+.aspersion-container h1 {
+    padding-left: 50px;
+}
+.aspersion-container p {
+    padding-left: 50px;
 }
 /* Version TABLETTE */
 /*spécial page de présetation à checker*/
