@@ -836,6 +836,7 @@ section {
     padding: 15px;
     border-radius: 10px;
 }
+/*service fleur*/
 
 .button-explorer {
     display: inline-block;
@@ -1167,53 +1168,7 @@ div.tableaux {
     background-position: center;
 }
 
-#prunier{
-    background-image: url("prunier.png");
-    width: 100%;
-    height: 200px; 
-    background-size: cover;
-    background-position: center;
-}  
-
-#pommier{
-    background-image: url("pommier.png");
-    width: 100%;
-    height: 200px; 
-    background-size: cover;
-    background-position: center;
-}  
-
-#poirier{
-    background-image: url("poirier.png");
-    width: 100%;
-    height: 200px; 
-    background-size: cover;
-    background-position: center;
-}  
-
-#mimosa{
-    background-image: url("mimosa.png");
-    width: 100%;
-    height: 200px; 
-    background-size: cover;
-    background-position: center;
-}  
-
-#cheneblanc{
-    background-image: url("cheneblanc.png");
-    width: 100%;
-    height: 200px; 
-    background-size: cover;
-    background-position: center;
-}  
-
-#cactus{
-    background-image: url("cactus.png");
-    width: 100%;
-    height: 200px; 
-    background-size: cover;
-    background-position: center;
-}  
+/* traitement palmiers*/
 
 .traitement-palmiers h1 {
     color: #000;
@@ -1352,6 +1307,201 @@ div.tableaux {
     background-size: cover;
     background-position: center;
 }
+
+/* Élagage*/
+
+.button-explorer {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: black;
+    /* Couleur du texte */
+    background-color: rgba(255, 255, 255, 0.6);
+    /* Fond semi-transparent */
+    font-family: Arial, sans-serif;
+    /* Police de caractères */
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#Élagage{
+    background-image: url("images/banniere.png");
+    background-size: cover;
+    height: 391px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cubeintro{
+    display: flex;
+    text-align: left;
+    margin: 30px auto;
+    margin-right: 86px;
+    background-color: #7cab67;
+    border: 1px solid #7cab67;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.coupe{
+ flex: 1;
+ background-color: #7cab67;
+ display: flex;
+ align-items: center;
+ padding: 90px;
+ padding-top: 90px;
+}
+/*taille et placement image*/
+
+.image-coupe{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    height: 50px;
+    width: 95px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-right: 5%;
+   }
+   .coupe img{
+    width: 450px;
+    height: 600px;
+   }
+   
+   .cube-texte{
+    flex: 2;
+    padding: 10px;
+    margin-right: 80px;
+    padding-left: 290px;
+    font-size: 22px;
+    font-family:'Times New Roman', Times, serif;
+   }
+  
+   /* partie sur les prestations d'elagage*/
+
+.Prestations{
+    margin-left: 250px;
+}
+
+.Prestations h2{
+    color: #7cab67;
+    margin-right: 280px;
+    padding-bottom: 60px;
+}
+
+.arbres-image, .homme-image, .tronc-image {
+    height: 200px; /* Ajustez la hauteur selon vos besoins */
+   
+    margin-bottom: 40px;
+    display: flex;
+    font-size: 1.5em; /* Taille de police pour le texte de remplacement */
+}
+  
+.arbres-container div, .homme-container div, .tronc-container{
+    width: 50%;
+}
+
+.arbres-container, .homme-container, .tronc-container {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+}
+
+
+.paragraphe h1 {
+    font-family: Livvic;
+    font-size: 20px;
+}
+
+.paragraphe p{
+    font-family: Inter;
+    font-size: 15px;
+}
+
+/*arbres*/ 
+.arbres-image {
+    width: 200px;
+    height: 300px;
+
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.arbres-container h1 {
+    color: #000;
+    font-size: 20px;
+    padding-right: -30px;
+   
+}
+
+.arbres-container p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+
+
+/* homme */
+
+.homme-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.homme-container p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+.homme-container .paragraphe{
+    flex: 2;
+    padding-top: 50px;
+}
+
+.homme-image {
+    width: 200px;
+    height: 300px;
+    
+    background-position: center;
+    padding-left: 120px;
+}
+/* abattage finalisé*/
+.tronc-image {
+    width: 200px;
+    height: 300px;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.tronc-container h1 {
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-left: 100px;
+}
+
+.tronc-container p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding-left: 120px;
+}
+
 
 /* Version TABLETTE */
 /*spécial page de présetation à checker*/
