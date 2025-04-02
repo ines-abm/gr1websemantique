@@ -1168,194 +1168,6 @@ div.tableaux {
     background-position: center;
 }
 
-#prunier{
-    background-image: url("prunier.png");
-    width: 100%;
-    height: 200px; 
-    background-size: cover;
-    background-position: center;
-}  
-
-#pommier{
-    background-image: url("pommier.png");
-    width: 100%;
-    height: 200px; 
-    background-size: cover;
-    background-position: center;
-}  
-
-#poirier{
-    background-image: url("poirier.png");
-    width: 100%;
-    height: 200px; 
-    background-size: cover;
-    background-position: center;
-}  
-
-#mimosa{
-    background-image: url("mimosa.png");
-    width: 100%;
-    height: 200px; 
-    background-size: cover;
-    background-position: center;
-}  
-
-#cheneblanc{
-    background-image: url("cheneblanc.png");
-    width: 100%;
-    height: 200px; 
-    background-size: cover;
-    background-position: center;
-}  
-
-#cactus{
-    background-image: url("cactus.png");
-    width: 100%;
-    height: 200px; 
-    background-size: cover;
-    background-position: center;
-}  
-
-.traitement-palmiers h1 {
-    color: #000;
-    font-size: 30px;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 300;
-    padding-top: 40px;
-    padding-right: 38%;
-}
-
-
-.content {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-
-.text-container {
-    flex: 1;
-}
-
-
-/*Soins*/
-.galleryie {
-    display: grid;
-    justify-content: center;
-
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.nos-soins {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 50px;
-}
-
-.soins-details {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    background-color: rgba(45, 45, 47, 0.8);
-    color: white;
-    text-align: center;
-    font-family: Inter;
-    padding: 10px;
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
-    position: absolute;
-    bottom: 0;
-}
-
-.soins-texte {
-    color: #000;
-    text-align: center;
-    font-family: "Inclusive Sans";
-    margin-top: 10px;
-    font-size: 19px;
-    font-weight: 300;
-    line-height: normal;
-}
-
-.soins-arbre {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    background-color: rgba(45, 45, 47, 0.8);
-    color: white;
-    text-align: center;
-    font-family: Inter;
-    padding: 10px;
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
-    position: absolute;
-    bottom: 0;
-}
-
-#insecticidebiologique {
-    background-image: url("insecticidebiologique.png");
-    width: 100%;
-    height: 200px; 
-    background-size: cover;
-    background-position: center;
-}
-
-#savonnoir {
-    background-image: url("savonnoir.png");
-    width: 100%;
-    height: 200px; 
-    background-size: cover;
-    background-position: center;
-}
-
-#Oriange® {
-    background-image: url("Oriange®.png");
-    width: 100%;
-    height: 200px; 
-    background-size: cover;
-    background-position: center;
-}
-
-#Engraisagrumesetplatesgranulé {
-    background-image: url("Engraisagrumesetplatesgranulé.png");
-    width: 100%;
-    height: 200px; 
-    background-size: cover;
-    background-position: center;
-}
-
-#Pailledemiscanthus {
-    background-image: url("Pailledemiscanthus.png");
-    width: 100%;
-    height: 200px; 
-    background-size: cover;
-    background-position: center;
-}
-
-#PurindePrêles {
-    background-image: url("PurindePrêles.png");
-    width: 100%;
-    height: 200px; 
-    background-size: cover;
-    background-position: center;
-} 
-
-
-
-
-
-
 /* traitement palmiers*/
 
 .traitement-palmiers h1 {
@@ -1690,7 +1502,133 @@ div.tableaux {
     padding-left: 120px;
 }
 
+/*Systemes d'arrosage*/
 
+.button-explorer {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: black;
+    /* Couleur du texte */
+    background-color: rgba(255, 255, 255, 0.6);
+    /* Fond semi-transparent */
+    font-family: Arial, sans-serif;
+    /* Police de caractères */
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#Arrosage{
+    background-image: url("images/banarrosage.png");
+    background-size: cover;
+    height: 391px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+/* cube avec les types d'arrosage*/
+.explication{
+    display: flex;
+    text-align: left;
+    margin: 30px auto;
+    margin-right: 86px;
+    background-color: #7cab67;
+    border: 1px solid #7cab67;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.systeme{
+ flex: 1;
+ background-color: #7cab67;
+ display: flex;
+ align-items: center;
+ padding: 90px;
+ padding-top: 90px;
+}
+
+.image-systeme{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    height: 50px;
+    width: 95px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-right: 5%;
+   }
+   .systeme img{
+    width: 450px;
+    height: 650px;
+   }
+   
+   .texte-type{
+    flex: 2;
+    padding: 10px;
+    margin-right: 80px;
+    padding-left: 290px;
+    font-size: 22px;
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 10px
+   }
+  
+/* les systemes d'arrosage*/
+
+.nossystemes{
+    margin-left: 250px;
+}
+
+.nossystemes h2{
+    color: #7cab67;
+    margin-right: 280px;
+    padding-bottom: 60px;
+}
+
+.goutte-image, .sprinkler-image, .aspersion-image, .tuyaux-image {
+    height: 200px; /* Ajustez la hauteur selon vos besoins */
+   
+    margin-bottom: 40px;
+    display: flex;
+    font-size: 1.5em; /* Taille de police pour le texte de remplacement */
+}
+  
+.goutte-container div, .sprinkler-container div, .aspersion-container, .tuyaux-container{
+    width: 50%;
+}
+
+.goutte-container, .sprinkler-container, .aspersion-container, .tuyaux-container {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+}
+
+.nossystemes img {
+    height: 200px;
+    width: 250px;
+}
+
+.paragraphe h1 {
+    font-family: Livvic;
+    font-size: 20px;
+}
+
+.paragraphe p{
+    font-family: Inter;
+    font-size: 15px;
+}
 /* Version TABLETTE */
 /*spécial page de présetation à checker*/
 @media (max-width: 1024px) {
