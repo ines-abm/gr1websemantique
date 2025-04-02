@@ -1167,6 +1167,54 @@ div.tableaux {
     background-position: center;
 }
 
+#prunier{
+    background-image: url("prunier.png");
+    width: 100%;
+    height: 200px; 
+    background-size: cover;
+    background-position: center;
+}  
+
+#pommier{
+    background-image: url("pommier.png");
+    width: 100%;
+    height: 200px; 
+    background-size: cover;
+    background-position: center;
+}  
+
+#poirier{
+    background-image: url("poirier.png");
+    width: 100%;
+    height: 200px; 
+    background-size: cover;
+    background-position: center;
+}  
+
+#mimosa{
+    background-image: url("mimosa.png");
+    width: 100%;
+    height: 200px; 
+    background-size: cover;
+    background-position: center;
+}  
+
+#cheneblanc{
+    background-image: url("cheneblanc.png");
+    width: 100%;
+    height: 200px; 
+    background-size: cover;
+    background-position: center;
+}  
+
+#cactus{
+    background-image: url("cactus.png");
+    width: 100%;
+    height: 200px; 
+    background-size: cover;
+    background-position: center;
+}  
+
 .traitement-palmiers h1 {
     color: #000;
     font-size: 30px;
