@@ -333,7 +333,7 @@ h2 {
 .banniere-eva{
   height: 200px;
   width: 1000px;
-  background-image: url('images-presentation/banniereva6MIN.webp');
+  background-image: url('images-presentation/banniereva-min.webp');
   background-size: cover;
   background-position: center;
   flex-shrink: 0;
