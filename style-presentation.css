@@ -576,7 +576,6 @@ h2 {
     background-color: #D77C8B;
     padding: 50px;
     border-radius: 8px;
-    font-family: inter;
 }
 
 .presentation-ava img {
@@ -623,7 +622,7 @@ h2 {
     max-width: 600px; 
     text-align: center;
     padding: 20px;
-    background-color:#D77C8B; 
+    background-color:#FFFFFF; 
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
