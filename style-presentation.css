@@ -202,7 +202,7 @@ section {
     transform: scaleX(1);
   }
 
-.banniere-ines, h1 {
+.banniere-ines h1 {
     text-align: center;
     line-height: normal;
     color:#87CEEB;
