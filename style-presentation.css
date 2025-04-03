@@ -491,7 +491,7 @@ h2 {
 .banniere-ava{
     height: 200px;
     width: 1000px;
-    background-image: url('images/banniere-ava.jpg');
+    background-image: url('images-presentation/banniere-ava.jpg');
     background-size: cover;
     background-position: center;
     flex-shrink: 0;
@@ -732,10 +732,6 @@ h2 {
     margin-top: 20px;
     margin-right: 40px;
 }
-
-
-
-
 
 
 
