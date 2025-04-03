@@ -136,7 +136,7 @@ section {
 .banniere-ines{
   height: 200px;
   width: 1000px;
-  background-image: url('images/banniere-ines.webp');
+  background-image: url('images-presentation/banniere-ines.webp');
   background-size: cover;
   background-position: center;
   flex-shrink: 0;
@@ -330,10 +330,10 @@ h2 {
 }
   /*page de présentation Eva*/
 
-.banniere-ines{
+.banniere-eva{
   height: 200px;
   width: 1000px;
-  background-image: url('images/banniereva.webp');
+  background-image: url('images-presentation/banniereva.webp');
   background-size: cover;
   background-position: center;
   flex-shrink: 0;
