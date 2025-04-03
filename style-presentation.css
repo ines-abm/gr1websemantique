@@ -637,6 +637,89 @@ h2 {
     object-fit: cover;
 }
 
+.parcourspro-ava img {
+    width: auto;
+    height: 272px; 
+    background-size: cover;
+    background-position: top;
+}
+
+
+.enfance-ava p, .formation-ava p, .parcourspro-ava p, .futursprojets-ava p {
+    font-size: 16px;
+    margin-top: 15px;
+    padding: 0 10px;
+    text-align: justify;
+}
+
+.enfance-ava, .formation-ava, .parcourspro-ava, .futursprojets-ava {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.vie-ava, .parcourspro-ava, .vie-ava, .futursprojets-ava {
+    margin-top: 40px; 
+}
+
+.bas-ava {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #F9F5F0;
+    width: 100%;
+}
+
+.topava, h1 {
+    text-align: center;
+    line-height: normal;
+    margin-bottom: 26px;
+    font-size: 32px;
+    margin-top: -45px;
+    margin-bottom: 50px;
+}
+
+.menuava {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    margin: 10px 10%;
+    margin-bottom: 10px;
+}
+
+.menuava img{
+    width: auto;
+    height: 467px;
+  }
+
+.menuava {
+    display: flex;
+    justify-content: space-around;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+  }
+  .menuava {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.avanav img {
+    margin-top: 50px;
+    margin-bottom: -100px;
+    max-width: 300px;
+    height: auto;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
 
 
 
