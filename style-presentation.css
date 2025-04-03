@@ -474,6 +474,22 @@ h2 {
     margin-top: 40px; 
 }
 
+.banniere-ava{
+    height: 200px;
+    width: 1000px;
+    background-image: url('images/ava.jpeg');
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
 /* Version Tablette */
 /*spécial page de présetation à checker*/
 /* ================== TABLETTES ================== */
