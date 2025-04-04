@@ -463,6 +463,21 @@ section {
     align-items: center;
     margin-top: -80px;
 }
+
+.banniere-debroussaillage {
+    width: 100vw;
+    height: 200px;
+    background-image: url('images/debrous.webp');
+    background-size: cover;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -80px;
+}
+
 .explicationrealisation{
     background-color: darkseagreen;
     padding: 40px;
