@@ -2062,6 +2062,11 @@ div.tableau {
         margin-top: 15px;
     }
 
+/*Page de service fleurs*/
+.gallery {
+    grid-template-columns: repeat(1, 1fr);
+}
+
 }
 
 /* PETITS TELS*/
