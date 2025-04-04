@@ -486,7 +486,7 @@ section {
     height: auto;
 }
 
-.nosrealisations h3{ /*ajustementsous-titre des réalisations*/
+.nosrealisations h3{ 
     text-align: center;
     font-size: 18px;
     font-weight: normal;
@@ -515,7 +515,6 @@ section {
     display: flex;
     align-items: center;
     gap: 70px;
-
     margin-bottom: 50px;
 }
 
@@ -1600,7 +1599,6 @@ div.tableau {
     padding-left: 50px;
 }
 /* Version TABLETTE */
-/*spécial page de présetation à checker*/
 @media (max-width: 1024px) {
     body {
         padding: 0 5%;
@@ -1695,10 +1693,9 @@ div.tableau {
         margin: 0 auto;
     }
 
-    .realisationbloc1, .realisationbloc2,
-    .creationbloc1, .creationbloc2 {
-        flex-wrap: wrap;
-        justify-content: center;
+    .realisationbloc1, .realisationbloc2 {
+        flex-direction: column;
+        align-items: center;
     }
 
     .realisation img, .creation img {
@@ -1772,7 +1769,9 @@ div.tableau {
     .creationbloc1, .creationbloc2,
     .servicebloc1, .servicebloc2, .servicebloc3, .alletapefontaine {
         flex-direction: column;
+        justify-content:center;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .services {
@@ -1944,6 +1943,11 @@ div.tableau {
         padding: 0 10px;
     }
 
+    .realisationbloc1, .realisationbloc2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .realisation img, .creation img {
         width: 180px;
         height: 180px;
@@ -2006,6 +2010,14 @@ div.tableau {
     .explicationcreation, .explicationfontaine img{
         flex-direction: column;
         text-align: center;
+    }
+
+    .creationbloc1, .creationbloc2,
+    .realisationbloc1, .realisationbloc2 {
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
     header img {
@@ -2187,7 +2199,9 @@ div.tableau {
     .realisationbloc1, .realisationbloc2,
     .creationbloc1, .creationbloc2 {
         flex-direction: column;
+        justify-content:center;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .realisation img, .creation img {
@@ -2317,7 +2331,7 @@ div.tableau {
         line-height: 1.5;
     }
 
-    .bloc-etape {
+    .bloc-etape, .noscreations {
         flex-direction: column;
         align-items: center;
         justify-content: center;
