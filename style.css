@@ -1694,8 +1694,10 @@ div.tableau {
     }
 
     .realisationbloc1, .realisationbloc2 {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
     .realisation img, .creation img {
@@ -1766,12 +1768,18 @@ div.tableau {
 
     /*Page de service ines */
 
-    .creationbloc1, .creationbloc2,
     .servicebloc1, .servicebloc2, .servicebloc3, .alletapefontaine {
         flex-direction: column;
         justify-content:center;
         align-items: center;
         flex-wrap: wrap;
+    }
+
+    .creationbloc1, .creationbloc2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .noscreations {
@@ -1958,11 +1966,6 @@ div.tableau {
         justify-content: center;
     }
 
-    .creation {
-        flex: 1 1 100%;
-        max-width: 300px;
-    }
-
     .realisation img, .creation img {
         width: 180px;
         height: 180px;
@@ -2025,6 +2028,9 @@ div.tableau {
     .explicationcreation, .explicationfontaine img{
         flex-direction: column;
         text-align: center;
+    }
+
+    .explicationcreation p {
         margin-bottom: 15px;
     }
 
