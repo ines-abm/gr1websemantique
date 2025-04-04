@@ -1032,7 +1032,7 @@ div.tableau {
 }
 
 
-.nos-fruits h1{
+.nos-fruits h1, h2{
     color: #66A766;
     font-family: Livvic;
     font-size: 30px;
@@ -1062,70 +1062,6 @@ div.tableau {
 
 
 
-.gallery1 {
-    display: grid;
-    justify-content: center;
-
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-div.tableaux {
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-    /* Hauteur fixe pour toutes les images */
-    object-fit: cover;
-    background-size: cover;
-    /* Adapte l'image pour qu'elle remplisse le conteneur sans distorsion */
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    position: relative;
-}
-
-
-
-
-.fruits  div.tableaux {
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-    /* Hauteur fixe pour toutes les images */
-    object-fit: cover;
-    background-size: cover;
-    /* Adapte l'image pour qu'elle remplisse le conteneur sans distorsion */
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    position: relative;
-}
-
-.fruits div.tableaux:hover .fruits-details {
-    display: flex;
-}
-
-
-
-/* Styles pour les détails des fruits */
-.fruits-details {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    background-color: rgba(45, 45, 47, 0.8);
-    color: white;
-    text-align: center;
-    font-family: Inter;
-    padding: 10px;
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: normal;
-    position: absolute;
-    bottom: 0;
-}
-
 
 .tableaux:hover .fruits-details {
     display: flex;
@@ -1142,33 +1078,52 @@ div.tableaux {
     line-height: normal;
 }
 
-
-#figuier {
-    background-image: url("images/figuier.png");
-    width: 100%;
-    height: 200px; 
-    background-size: cover;
-    background-position: center;
+.fruit-section, .tree-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
 }
 
-#groseilier {
-    background-image: url("images/groseilier.png");
+
+.fruit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.fruit-card {
+    padding: 1rem;
+}
+
+.fruit-card img {
     width: 100%;
-    height: 200px; 
-    background-size: cover;
-    background-position: center;
+    height: 200px;
     object-fit: cover;
 }
 
-#cerisier{
-    background-image: url("images/cerisier.png");
-    width: 100%;
-    height: 200px; 
-    background-size: cover;
-    background-position: center;
+.fruit-card h3 {
+    margin-top: 0.8rem;
+    font-size: 1.2rem;
+    color: #000;
+    font-family: Inter;
 }
 
-/* traitement palmiers*/
+.fruit-card p {
+    font-size: 0.95rem;
+    color: #000;
+    font-family: "Inclusive Sans";
+    text-align: justify;
+}
+
+
+
+
+
+
+
+/* Service traitement palmiers*/
 
 .traitement-palmiers h1 {
     color: #000;
