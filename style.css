@@ -320,6 +320,10 @@ section {
     align-items: center;
 }
 
+.adresse h2{
+    color: #000;
+}
+
 .adresse-text{
     margin-left: 35px;
     background-color: #66A766;
