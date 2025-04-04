@@ -1814,7 +1814,9 @@ div.tableaux {
     .creationbloc1, .creationbloc2,
     .servicebloc1, .servicebloc2, .servicebloc3, .alletapefontaine {
         flex-direction: column;
-        align-items: center; !important
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
     }
 
     .services {
@@ -2055,6 +2057,14 @@ div.tableaux {
         text-align: center;
     }
 
+    .creationbloc1, .creationbloc2,
+    .realisationbloc1, .realisationbloc2 {
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
     header img {
         width: 100%;
         height: auto;
@@ -2080,11 +2090,6 @@ div.tableaux {
         margin: 0 auto;
         max-width: 100%;
         height: auto;
-    }
-
-    .noscreations {
-        flex-direction: column;
-        align-items: center; 
     }
 
     .allservices h3 {
@@ -2237,9 +2242,11 @@ div.tableaux {
     }
 
     .realisationbloc1, .realisationbloc2,
-    .noscreations {
+    .creationbloc1, .creationbloc2 {
         flex-direction: column;
+        justify-content:center;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .realisation img, .creation img {
