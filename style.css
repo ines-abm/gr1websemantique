@@ -1951,7 +1951,7 @@ div.tableau {
         padding: 0 10px;
     }
 
-    .realisationbloc1, .realisationbloc2 {
+    .realisationbloc1, .realisationbloc2, .creationbloc1, .creationbloc2 {
         flex-direction: column;
         align-items: center;
     }
@@ -2024,16 +2024,6 @@ div.tableau {
     .realisationbloc1, .realisationbloc2 {
         flex-direction: column;
         justify-content:center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .noscreations {
-        flex-direction: column; /* Colonne sur petits écrans */
-    }
-
-    .creation {
-        margin-bottom: 15px; /* Ajuste l'espacement entre les images */
     }
 
     header img {
@@ -2103,7 +2093,6 @@ div.tableau {
 
     .bloc-etape {
         flex-direction: column;
-        align-items: center;
         justify-content: center;
     }
 
@@ -2215,9 +2204,7 @@ div.tableau {
     .realisationbloc1, .realisationbloc2,
     .creationbloc1, .creationbloc2 {
         flex-direction: column;
-        justify-content:center;
         align-items: center;
-        flex-wrap: wrap;
     }
 
     .realisation img, .creation img {
@@ -2347,7 +2334,7 @@ div.tableau {
         line-height: 1.5;
     }
 
-    .bloc-etape, .noscreations {
+    .bloc-etape, .creationbloc1, .creationbloc2 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
