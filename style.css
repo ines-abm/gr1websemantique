@@ -738,6 +738,37 @@ section {
     line-height: 1.5;
 }
 
+.etapedebrouss {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+}
+
+.etapedebrouss img {
+    width: 250px;
+    max-width: 250px;
+    height: auto;
+}
+
+.etapedebrouss h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    max-width: 250px;
+    margin-top: 10px;
+}
+
+.etapedebrouss p {
+    text-align: justify;
+    width: 100%;
+    max-width: 250px;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
 .info-supp {
     width: 100%;
     text-align: center;
