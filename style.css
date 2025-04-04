@@ -507,16 +507,20 @@ section {
     margin-right: auto; 
 }
 
-.hautcreation, h1, .hautfontaine, .hautrealisation {
+.hautfontaine, .hautrealisation {
     margin-top: -30px;
     margin-bottom: 10px;
-    
 }
+
+.hautcreation, h1{
+    mqargin-top: 30px;
+    margin-bottom: 10px;
+}
+
 .explicationcreation, .explicationfontaine, .explicationrealisation {
     display: flex;
     align-items: center;
     gap: 70px;
-
     margin-bottom: 50px;
 }
 
