@@ -322,6 +322,9 @@ section {
     justify-content: space-between;
     align-items: center;
 }
+.adresse h2 {
+    color: #000;
+}
 
 .adresse-text{
     margin-left: 35px;
@@ -496,8 +499,8 @@ section {
 .hautcreation, h1, .hautfontaine, .hautrealisation {
     margin-top: -30px;
     margin-bottom: 10px;
-    
 }
+
 .explicationcreation, .explicationfontaine, .explicationrealisation {
     display: flex;
     align-items: center;
@@ -525,18 +528,24 @@ section {
     margin-top: -30px;
 }
 
-.noscreations, .nosfontaines, .nosrealisation, h2, h3{
+.nosfontaines, h2, h3{
     text-align: center;
     line-height: normal;
     margin-bottom: 26px;
     font-size: 32px;
 }
 
+.nosrealisations h2{
+    color: #66A766;
+    font-family: Livvic;
+    font-size: 30px;
+}
+
 .noscreations h2{
     margin-top: 30px;
 }
 
-.noscreations, .nosfontaines, .nosrealisations {
+.nosfontaines {
     padding: 10px;
     align-items: center;
     justify-content: center;
@@ -546,14 +555,14 @@ section {
     margin: 0 auto;
 }
 
-.creationbloc1, .creationbloc2, .fontainebloc1, .fontainebloc2, .realisationbloc1, .realisationbloc2 {
+.fontainebloc1, .fontainebloc2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
   }
 
-.creation img, .fontaine img, .realisation img {
+    .fontaine img {
     width: 253px;
     padding: 5px;
     margin: 22.5px;
@@ -563,7 +572,7 @@ section {
     transition: transform 0.3s ease-in-out;
 }
 
-.creation img:hover, .fontaine img:hover, .realisation img:hover{
+    .fontaine img:hover {
     transform: scale(1.1);
   }
 
@@ -865,8 +874,6 @@ section {
     font-size: 20px;
 }
 
-
-
 h1,
 p {
     font-family: "Inter";
@@ -1159,7 +1166,6 @@ div.tableau {
     padding: 40px;
     
 }
-  
 
 .insecte-container div, .papillon-container div{
     width: 50%;
@@ -1171,8 +1177,7 @@ div.tableau {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 60px;
-    
+    gap: 60px;   
 }
 
 .insecte-container h1{
@@ -1192,7 +1197,6 @@ div.tableau {
     width: 100%;
     padding: 20px;
 }
-
 
 .palmier-insectes h2 {
     color: #66A766;
@@ -1256,11 +1260,8 @@ div.tableau {
     padding: 10px 20px;
     font-size: 20px;
     color: black;
-    /* Couleur du texte */
     background-color: rgba(255, 255, 255, 0.6);
-    /* Fond semi-transparent */
     font-family: Arial, sans-serif;
-    /* Police de caractères */
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -1340,7 +1341,6 @@ div.tableau {
 
 .arbres-image, .homme-image, .tronc-image {
     height: 200px; /* Ajustez la hauteur selon vos besoins */
-   
     margin-bottom: 40px;
     display: flex;
     font-size: 1.5em; /* Taille de police pour le texte de remplacement */
@@ -1362,7 +1362,6 @@ div.tableau {
     
 }
 
-
 .paragraphe h1 {
     font-family: Livvic;
     font-size: 20px;
@@ -1377,7 +1376,6 @@ div.tableau {
 .arbres-image {
     width: 200px;
     height: 300px;
-
     background-size: cover;
     background-position: center;
     
