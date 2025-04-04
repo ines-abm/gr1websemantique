@@ -1823,7 +1823,7 @@ div.tableaux {
     }
 
     .hautcreation h1 {
-        margin-top: 40px;
+        margin-top: 60px;
         margin-bottom: 50px;
     }
 
@@ -2056,7 +2056,7 @@ div.tableaux {
 
      /*ajustement service-creation*/
     .hautcreation h1 {
-        margin-top: 40px;
+        margin-top: 60px;
         margin-bottom: 30px;
     }
 
@@ -2496,6 +2496,11 @@ div.tableaux {
 
     .etapefontaine h3{
         margin-top: 15px;
+    }
+
+    .hautcreation h1 {
+        margin-top: 60px;
+        margin-bottom: 50px;
     }
 
     .form_style,
