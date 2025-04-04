@@ -324,7 +324,11 @@ h2 {
 }
 
 /*nomine*/
-.topines{
+.topines img{
+    align-items : center;
+    width : auto; 
+    height : auto;
+}
   /*page de présentation Eva*/
 
 .banniere-eva{
