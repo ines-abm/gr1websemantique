@@ -4,7 +4,7 @@
     padding: 0px;
 }
 
-/* Style général pour le corps de la page */
+/* corps de la page */
 body {
     display: flex;
     flex-direction: column;
@@ -46,11 +46,8 @@ section {
     padding: 10px 20px;
     font-size: 20px;
     color: black;
-    /* Couleur du texte */
     background-color: rgba(255, 255, 255, 0.6);
-    /* Fond semi-transparent */
-    font-family: Arial, sans-serif;
-    /* Police de caractères */
+    font-family: Inter, sans-serif;
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -59,7 +56,6 @@ section {
     transition: background-color 0.3s ease;
 }
 
-/* Effet au survol */
 .button:hover {
     background-color: rgba(255, 255, 255, 0.9);
 }
@@ -69,11 +65,9 @@ section {
     display: flex;
     justify-content: center;
     gap: 30px;
-    /* Espace entre les liens */
     padding: 20px 0;
 }
 
-/* Styles pour chaque lien du menu */
 .navines a {
     display: flex;
     align-items: center;
@@ -219,7 +213,7 @@ section {
     margin-bottom: 10px;
 }
 
-  .texte-presentation-ines {
+.texte-presentation-ines {
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -328,6 +322,9 @@ h2 {
     background-color: #F9F5F0;
     width: 100%;
 }
+
+/*nomine*/
+.topines{
   /*page de présentation Eva*/
 
 .banniere-eva{
@@ -591,8 +588,6 @@ h2 {
 
 
 /* Version Tablette */
-/*spécial page de présetation à checker*/
-/* ================== TABLETTES ================== */
 @media (max-width: 1024px) {
     body {
         padding: 0 5%;
