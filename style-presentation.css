@@ -806,7 +806,7 @@ h2 {
         height: auto;
     }
     
-    /*section page de presentation eva*/
+    /*page d'Eva*/
 
         .banniereva {
         width: 100%;
@@ -856,7 +856,86 @@ h2 {
         width: 100%;
         height: auto;
     }
+
+/*page d'Ava*/
+
+.nav-ava {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
 }
+
+.nav-ava ul {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.banniere-ava {
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.menu-ava {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-ava ul {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.top-ava, h1 {
+    font-size: 28px;
+}
+
+.top-ava img {
+    max-width: 100%;
+    height: auto; 
+    margin: 0 auto;
+    display: block;
+}
+
+.texte-presentation-ava {
+    font-size: 18px;
+    padding: 20px;
+    margin-top: 90px;
+}
+
+.presentation-ava {
+    flex-direction: column;
+    gap: 15px;
+    margin: 10px 3%;
+}
+
+.texte-presentation-ava h2 {
+    font-size: 20px;
+    margin-left: 90px;
+}
+
+.vie-ava {
+    width: 90%;
+    gap: 20px;
+}
+
+.vie-ava img {
+    max-width: 100%;
+    height: auto;
+}
+
+.enfance-ava, .formation-ava, .parcourspro-ava, .futursprojets-ava {
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.enfance-ava img, .formation-ava img, .futursprojets-ava img {
+    width: 100%;
+    height: auto;
+}
+}
+
 
 /* ================== PETITS ÉCRANS (Téléphones) ================== */
 @media (max-width: 480px)
@@ -893,7 +972,6 @@ h2 {
         font-size: 16px;
     }
 
-    /*section page de présentation Inès*/
     
     .banniere-ines h1 {
         font-size: 24px;
@@ -913,7 +991,7 @@ h2 {
         padding: 0 5%;
     }
     
-        /*section page de présentation eva*/
+
     .topines h1 {
         font-size: 24px;
         margin-top: 15px;
@@ -935,4 +1013,46 @@ h2 {
     .etudiante img {
         max-width: 180px;
     }
+
+    /*Page de présentation d'Ava*/
+
+    .nav-ava {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .nav-ava ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .nav-ava a {
+        font-size: 16px;
+    }
+
+    
+.banniere-ava h1 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.vie-ava {
+    gap: 15px;
+}
+
+.vie-ava h2 {
+    font-size: 20px;
+}
+
+.vie-ava p {
+    font-size: 14px;
+    padding: 0 5%;
+}
+
+.ava h1 {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
 }
