@@ -1,26 +1,5 @@
-@font-face {
-  font-family: 'Inter';
-  src: url('https://fonts.gstatic.com/s/inter/v12/UcclYbaM5ml0Ne-mF1W-TtGxvB0XHZ07Lbx5jQTdn6s.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Liu Jian Mao Cao';
-  src: url('https://fonts.gstatic.com/s/liujiamaocao/v11/_pPsrJc3JjxZTt8I_gQzT2cuPwvX_cuvp7oM_w.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Livvic';
-  src: url('https://fonts.gstatic.com/s/livvic/v7/QZZ3Xx1aD3vVeGEXjBqR1ZGzzf_7ObgmHkRzGVs.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@400&display=swap');
 
 * {
     box-sizing: border-box;
@@ -39,8 +18,23 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-h1 {
-  font-family: 'Livvic', sans-serif;
+body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+h2 {
+    font-family: 'Livvic', sans-serif;
+    font-weight: 100;
+}
+
+h3 {
+    font-family: 'Livvic', sans-serif;
+    font-weight: 300;
 }
 
 header {
@@ -548,7 +542,7 @@ section {
     margin-left: -25px;
 }
 
-.explicationcreation p{
+.explicationcreation p, .explicationfontaine p{
     font-size: 16px;
     text-align: justify;
     line-height: 1.5;
