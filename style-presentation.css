@@ -324,12 +324,18 @@ h2 {
 }
 
 /*nomine*/
-.topines img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 117px; 
-    height: 209px;
+.topines {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.nomine {
+    width: 200px;
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
 }
   /*page de présentation Eva*/
 
