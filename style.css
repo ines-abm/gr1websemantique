@@ -1768,6 +1768,9 @@ div.tableaux {
         text-align: center;
         gap: 40px;
     }
+    .nouscontacter{
+        margin-top: 50px;
+    }
 
     .gauche {
         flex-direction: column;
@@ -1997,7 +2000,7 @@ div.tableaux {
     }
 
     .nouscontacter img {
-        margin-top: 25px;
+        margin-top: 50px;
         height: 300px;
     }
     .nouscontacter h1 {
@@ -2378,7 +2381,7 @@ div.tableaux {
     }
 
     .nouscontacter img {
-        margin-top: 25px;
+        margin-top: 50px;
         height: 300px;
     }
     .nouscontacter h1 {
