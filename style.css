@@ -1158,30 +1158,64 @@ div.tableaux {
     line-height: normal;
 }
 
-
-#figuier {
-    background-image: url("images/figuier.png");
-    width: 100%;
-    height: 200px; 
-    background-size: cover;
-    background-position: center;
+.fruit-section, .tree-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
 }
 
-#groseilier {
-    background-image: url("images/groseilier.png");
+
+.fruit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.fruit-card {
+    padding: 1rem;
+}
+
+.fruit-card img {
     width: 100%;
-    height: 200px; 
-    background-size: cover;
-    background-position: center;
+    height: 200px;
     object-fit: cover;
 }
 
-#cerisier{
-    background-image: url("images/cerisier.png");
-    width: 100%;
-    height: 200px; 
-    background-size: cover;
-    background-position: center;
+.fruit-card h3 {
+    margin-top: 0.8rem;
+    font-size: 1.2rem;
+    color: #444;
+}
+
+.fruit-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.intro-text {
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  .intro-text strong {
+    font-weight: bold;
+  }
+
+    .fruit-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.fruit-card:hover {
+  transform: translateY(-5px);
 }
 
 /* traitement palmiers*/
