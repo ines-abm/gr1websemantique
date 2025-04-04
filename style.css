@@ -67,11 +67,8 @@ section {
     padding: 10px 20px;
     font-size: 20px;
     color: black;
-    /* Couleur du texte */
     background-color: rgba(255, 255, 255, 0.6);
-    /* Fond semi-transparent */
     font-family: Inter;
-    /* Police de caractères */
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -80,7 +77,6 @@ section {
     transition: background-color 0.3s ease;
 }
 
-/* Effet au survol */
 .button:hover {
     background-color: rgba(255, 255, 255, 0.9);
 }
@@ -89,7 +85,6 @@ section {
 .nav {
     display: flex;
     justify-content: center;
-    justify-content: flex-start;
     gap: 30px;
     /* Espace entre les liens */
     padding: 20px 0;
@@ -99,9 +94,10 @@ section {
 .nav a {
     display: flex;
     align-items: center;
+    justify-content: center;
     color: #000;
-    text-align: left;
-    font-family: Inter;
+    text-align: center;
+    font-family: 'Inter';
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -110,27 +106,44 @@ section {
 }
 
 .nav ul {
+    padding: 30px;
     display: flex;
     list-style-type: none;
     gap: 40px;
+    margin-bottom: -50px;
   }
 
 .nav a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+}
+
+.sous-menu {
+    position: absolute;
+    background-color: #F9F5F0;
+    padding: 5px 0;
+    min-width: 200px;
 }
 
 .sous-menu li {
-    text-align: left;
+    width: 100%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .sous-menu a {
+    display: block;
+    width: 100%;
+    padding: 8px 10px;
     background-color: #F9F5F0;
     color: #333;
     transition: background-color 0.3s ease;
+    white-space: nowrap;
+    text-align: left;
 }
 
 .sous-menu a:hover {
-    background-color: #F9F5F0;
+    background-color: #559155;
 }
 
 .menu-deroulant {
@@ -138,39 +151,11 @@ section {
 }
 
 .menu-deroulant:hover .sous-menu {
-    display: flex;
+    display: block;
 }
 
 .menu-deroulant .sous-menu {
     display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    flex-direction: column;
-    background-color: #F9F5F0;
-    z-index: 1000;
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid #000;
-    max-height: 200px; /* Ajustez cette valeur selon vos besoins */
-    overflow-y: auto; /* Ajoute une barre de défilement verticale si nécessaire */
-}
-.menu-deroulant .sous-menu::-webkit-scrollbar {
-    width: 8px;
-}
-
-.menu-deroulant .sous-menu::-webkit-scrollbar-thumb {
-    background-color: #ccc;
-    border-radius: 4px;
-}
-
-.menu-deroulant .sous-menu::-webkit-scrollbar-track {
-    background-color: #f1f1f1;
-}
-
-
-.menu-deroulant .sous-menu a:last-child {
-    border-bottom: none; /* Supprime la bordure du dernier élément */
 }
 
 /*page d'accueil*/
@@ -329,7 +314,7 @@ section {
 
 /*adresse*/
 
-.adresse {
+.adresse h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -383,13 +368,13 @@ section {
       color: rgb(0, 0, 0);
       text-align: center;
       font-size: 32px;
-      font-style: bold;
+      font-weight: 400;
       margin-bottom: 80px;
       margin-top: 50px;
       font-family: Livvic;
     }
     
-    .form_style {
+.form_style {
         background-color: #66A766;
         border: none;
         margin: 15px;
@@ -401,7 +386,7 @@ section {
         font-size: 16px;
     }
     
-    textarea.form_style {
+    .textarea.form_style {
         height: 100px;
         color: white !important;
         padding-top: 10px;
@@ -458,7 +443,6 @@ section {
 }
 
 /*page de service création, fontaine, et galerie page de réalisation*/
-/*up*/
 
 .banniere {
     width: 100vw;
@@ -478,7 +462,7 @@ section {
     padding: 40px;
 }
 
-.banniere h1{
+.banniere h1, banniere-debroussaillage h1 {
     text-align: center;
     margin-top:40px;
     background-color: #66A766;
@@ -486,7 +470,21 @@ section {
     height: auto;
 }
 
-.nosrealisations h3{ /*ajustementsous-titre des réalisations*/
+.banniere-debroussaillage {
+     width: 100vw;
+     height: 200px;
+     background-image: url('images/debrous.webp');
+     background-size: cover;
+     background-position: 100%;
+     background-repeat: no-repeat;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-top: -80px;
+ }
+
+.nosrealisations h3{
     text-align: center;
     font-size: 18px;
     font-weight: normal;
@@ -531,7 +529,7 @@ section {
     margin-left: -25px;
 }
 
-.explicationcreation p{
+.explicationcreation p, .explicationfontaine p{
     font-size: 16px;
     text-align: justify;
     line-height: 1.5;
@@ -539,7 +537,7 @@ section {
     margin-top: -30px;
 }
 
-.noscreations, .nosfontaines, .nosrealisation, h2, h3{
+.nosfontaines, h2, h3{
     text-align: center;
     line-height: normal;
     margin-bottom: 26px;
@@ -550,7 +548,13 @@ section {
     margin-top: 30px;
 }
 
-.noscreations, .nosfontaines, .nosrealisations {
+.nosrealisations h2{
+     color: #66A766;
+     font-family: Livvic;
+     font-size: 30px;
+ }
+
+.nosfontaines, {
     padding: 10px;
     align-items: center;
     justify-content: center;
@@ -560,14 +564,14 @@ section {
     margin: 0 auto;
 }
 
-.creationbloc1, .creationbloc2, .fontainebloc1, .fontainebloc2, .realisationbloc1, .realisationbloc2 {
+.fontainebloc1, .fontainebloc2,{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
   }
 
-.creation img, .fontaine img, .realisation img {
+.fontaine img,{
     width: 253px;
     padding: 5px;
     margin: 22.5px;
@@ -577,7 +581,7 @@ section {
     transition: transform 0.3s ease-in-out;
 }
 
-.creation img:hover, .fontaine img:hover, .realisation img:hover{
+.fontaine img:hover,{
     transform: scale(1.1);
   }
 
@@ -728,6 +732,37 @@ section {
     line-height: 1.5;
 }
 
+.etapedebrouss {
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     max-width: 300px;
+ }
+ 
+ .etapedebrouss img {
+     width: 250px;
+     max-width: 250px;
+     height: 250px;
+ }
+ 
+ .etapedebrouss h3 {
+     font-size: 1.2em;
+     font-weight: bold;
+     text-align: center;
+     width: 100%;
+     max-width: 250px;
+     margin-top: 10px;
+ }
+ 
+ .etapedebrouss p {
+     text-align: justify;
+     width: 100%;
+     max-width: 250px;
+     margin-top: 5px;
+     line-height: 1.5;
+ }
+
 .info-supp {
     width: 100%;
     text-align: center;
@@ -843,11 +878,8 @@ section {
     padding: 10px 20px;
     font-size: 20px;
     color: black;
-    /* Couleur du texte */
     background-color: rgba(255, 255, 255, 0.6);
-    /* Fond semi-transparent */
     font-family: Arial, sans-serif;
-    /* Police de caractères */
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -871,15 +903,12 @@ section {
     width: 100%;
     display: block;
     margin: 0 auto;
-    /* Centre l'image */
 }
 
 .texte-sous-image{
     text-align: center;
     font-size: 20px;
 }
-
-
 
 h1,
 p {
@@ -907,10 +936,8 @@ div.tableau {
     cursor: pointer;
     width: 100%;
     height: 100%;
-    /* Hauteur fixe pour toutes les images */
     object-fit: cover;
     background-size: cover;
-    /* Adapte l'image pour qu'elle remplisse le conteneur sans distorsion */
     display: flex;
     justify-content: center;
     align-items: end;
@@ -921,10 +948,8 @@ div.tableau {
     cursor: pointer;
     width: 100%;
     height: 100%;
-    /* Hauteur fixe pour toutes les images */
     object-fit: cover;
     background-size: cover;
-    /* Adapte l'image pour qu'elle remplisse le conteneur sans distorsion */
     display: flex;
     justify-content: center;
     align-items: end;
@@ -971,7 +996,6 @@ div.tableau {
     background-image: url("images/begonia.png");
 }
 
-
 .flowers-details {
     display: none;
     flex-direction: column;
@@ -1002,7 +1026,7 @@ div.tableau {
 }
 
 .container {
-    background-color: #a8d8a8; /* Light green background */
+    background-color: #a8d8a8;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1032,7 +1056,7 @@ div.tableau {
 }
 
 
-.nos-fruits h1{
+.nos-fruits h1, h2{
     color: #66A766;
     font-family: Livvic;
     font-size: 30px;
@@ -1060,8 +1084,6 @@ div.tableau {
     gap: 50px;
 }
 
-
-
 .gallery1 {
     display: grid;
     justify-content: center;
@@ -1074,27 +1096,20 @@ div.tableaux {
     cursor: pointer;
     width: 100%;
     height: 100%;
-    /* Hauteur fixe pour toutes les images */
     object-fit: cover;
     background-size: cover;
-    /* Adapte l'image pour qu'elle remplisse le conteneur sans distorsion */
     display: flex;
     justify-content: center;
     align-items: end;
     position: relative;
 }
 
-
-
-
 .fruits  div.tableaux {
     cursor: pointer;
     width: 100%;
     height: 100%;
-    /* Hauteur fixe pour toutes les images */
     object-fit: cover;
     background-size: cover;
-    /* Adapte l'image pour qu'elle remplisse le conteneur sans distorsion */
     display: flex;
     justify-content: center;
     align-items: end;
@@ -1104,8 +1119,6 @@ div.tableaux {
 .fruits div.tableaux:hover .fruits-details {
     display: flex;
 }
-
-
 
 /* Styles pour les détails des fruits */
 .fruits-details {
@@ -1180,13 +1193,11 @@ div.tableaux {
     padding-right: 38%;
 }
 
-
 .content {
     display: flex;
     align-items: flex-start;
     gap: 20px;
 }
-
 
 .text-container {
     flex: 1;
@@ -1203,11 +1214,11 @@ div.tableaux {
 }
   
 .insecte-image, .papillon-image {
-    height: 200px; /* Ajustez la hauteur selon vos besoins */
-    background-color: #f0f0f0; /* Couleur de fond par défaut */
+    height: 200px;
+    background-color: #f0f0f0;
     margin-bottom: 20px;
     display: flex;
-    font-size: 1.5em; /* Taille de police pour le texte de remplacement */
+    font-size: 1.5em;
 }
   
 .palmier-image {
@@ -1215,10 +1226,8 @@ div.tableaux {
     background-size: cover;
     height: 400px;  
     width: 100%;
-    padding: 40px;
-    
-}
-  
+    padding: 40px;    
+}  
 
 .insecte-container div, .papillon-container div{
     width: 50%;
@@ -1231,7 +1240,6 @@ div.tableaux {
     justify-content: center;
     align-items: center;
     gap: 60px;
-    
 }
 
 .insecte-container h1{
@@ -1251,7 +1259,6 @@ div.tableaux {
     width: 100%;
     padding: 20px;
 }
-
 
 .palmier-insectes h2 {
     color: #66A766;
@@ -1273,7 +1280,7 @@ div.tableaux {
 .insecte-image {
     width: 200px;
     height: 300px;
-    background-image: url('images/insecte1.jpeg'); /* Remplacez par le chemin de votre image */
+    background-image: url('images/insecte1.jpeg');
     background-size: cover;
     background-position: center;
 }
@@ -1303,7 +1310,7 @@ div.tableaux {
 .papillon-image {
     width: 200px;
     height: 300px;
-    background-image: url('images/insecte2.jpg'); /* Remplacez par le chemin de votre image */
+    background-image: url('images/insecte2.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -1315,11 +1322,8 @@ div.tableaux {
     padding: 10px 20px;
     font-size: 20px;
     color: black;
-    /* Couleur du texte */
     background-color: rgba(255, 255, 255, 0.6);
-    /* Fond semi-transparent */
     font-family: Arial, sans-serif;
-    /* Police de caractères */
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -1358,7 +1362,7 @@ div.tableaux {
  padding: 90px;
  padding-top: 90px;
 }
-/*taille et placement image*/
+
 
 .image-coupe{
     flex: 1;
@@ -1398,11 +1402,10 @@ div.tableaux {
 }
 
 .arbres-image, .homme-image, .tronc-image {
-    height: 200px; /* Ajustez la hauteur selon vos besoins */
-   
+    height: 200px;
     margin-bottom: 40px;
     display: flex;
-    font-size: 1.5em; /* Taille de police pour le texte de remplacement */
+    font-size: 1.5em;
 }
   
 .arbres-container div, .homme-container div, .tronc-container{
@@ -1417,10 +1420,8 @@ div.tableaux {
     align-items: center;
     gap: 60px;
     padding-top: 40px;
-    padding-bottom: 40px;
-    
+    padding-bottom: 40px;  
 }
-
 
 .paragraphe h1 {
     font-family: Livvic;
@@ -1436,17 +1437,14 @@ div.tableaux {
 .arbres-image {
     width: 200px;
     height: 300px;
-
     background-size: cover;
-    background-position: center;
-    
+    background-position: center;   
 }
 
 .arbres-container h1 {
     color: #000;
     font-size: 20px;
-    padding-right: -30px;
-   
+    margin-right: -30px;
 }
 
 .arbres-container p {
@@ -1509,11 +1507,8 @@ div.tableaux {
     padding: 10px 20px;
     font-size: 20px;
     color: black;
-    /* Couleur du texte */
     background-color: rgba(255, 255, 255, 0.6);
-    /* Fond semi-transparent */
     font-family: Arial, sans-serif;
-    /* Police de caractères */
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -1532,6 +1527,7 @@ div.tableaux {
     align-items: center;
     flex-direction: column;
 }
+
 /* cube avec les types d'arrosage*/
 .explication{
     display: flex;
@@ -1592,11 +1588,11 @@ div.tableaux {
 }
 
 .goutte-image, .sprinkler-image, .aspersion-image, .tuyaux-image {
-    height: 200px; /* Ajustez la hauteur selon vos besoins */
+    height: 200px;
    
     margin-bottom: 40px;
     display: flex;
-    font-size: 1.5em; /* Taille de police pour le texte de remplacement */
+    font-size: 1.5em;
 }
   
 .goutte-container div, .sprinkler-container div, .aspersion-container, .tuyaux-container{
@@ -1611,10 +1607,8 @@ div.tableaux {
     align-items: center;
     gap: 60px;
     padding-top: 40px;
-    padding-bottom: 40px;
-    
+    padding-bottom: 40px; 
 }
-
 
 .nossystemes img {
     height: 200px;
@@ -1645,7 +1639,6 @@ div.tableaux {
     padding-left: 50px;
 }
 /* Version TABLETTE */
-/*spécial page de présetation à checker*/
 @media (max-width: 1024px) {
     body {
         padding: 0 5%;
@@ -1740,17 +1733,6 @@ div.tableaux {
         margin: 0 auto;
     }
 
-    .realisationbloc1, .realisationbloc2,
-    .creationbloc1, .creationbloc2 {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .realisation img, .creation img {
-        width: 220px;
-        height: 220px;
-    }
-
     /*Page de FAq*/
     .topfaq{
         margin-top: 60px;
@@ -1814,7 +1796,6 @@ div.tableaux {
 
     /*Page de service ines */
 
-    .creationbloc1, .creationbloc2,
     .servicebloc1, .servicebloc2, .servicebloc3, .alletapefontaine {
         flex-direction: column;
         align-items: center;
@@ -1831,7 +1812,7 @@ div.tableaux {
         gap: 30px;
     }
 
-    .noscreations, .nosfontaines, .nosrealisations h2 {
+    .nosfontaines h2 {
         font-size: 28px;
     }
 
@@ -1845,6 +1826,7 @@ div.tableaux {
         margin: 0 auto;
         max-width: 100%;
         height: auto;
+        margin-bottom: 15px;
     }
 
     .allservices h3 {
@@ -1989,11 +1971,6 @@ div.tableaux {
         padding: 0 10px;
     }
 
-    .realisation img, .creation img {
-        width: 180px;
-        height: 180px;
-    }
-
     .separator-realisations {
         width: 80%;
     }
@@ -2053,6 +2030,10 @@ div.tableaux {
         text-align: center;
     }
 
+     .explicationcreation p {
+         margin-bottom: 15px;
+     }
+
     header img {
         width: 100%;
         height: auto;
@@ -2070,7 +2051,7 @@ div.tableaux {
      /*ajustement service-creation*/
     .hautcreation h1 {
         margin-top: 30px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .explicationcreation img, .explicationfontaine img {
@@ -2078,6 +2059,7 @@ div.tableaux {
         margin: 0 auto;
         max-width: 100%;
         height: auto;
+        margin-bottom: 15px;
     }
 
     .allservices h3 {
@@ -2120,7 +2102,6 @@ div.tableaux {
 
     .bloc-etape {
         flex-direction: column;
-        align-items: center;
         justify-content: center;
     }
 
@@ -2368,12 +2349,6 @@ div.tableaux {
         height: auto;
     }
 
-    .realisationbloc1, .realisationbloc2,
-    .creationbloc1, .creationbloc2 {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .realisation img, .creation img {
         width: 100%;
         height: auto;
@@ -2458,6 +2433,7 @@ div.tableaux {
         margin: 0 auto;
         max-width: 100%;
         height: auto;
+        margin-bottom: 10px;
     }
 
     .allservices h3 {
