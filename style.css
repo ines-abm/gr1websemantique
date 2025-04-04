@@ -1774,6 +1774,14 @@ div.tableau {
         flex-wrap: wrap;
     }
 
+    .noscreations {
+        flex-direction: column;
+    }
+
+    .creation {
+        margin-bottom: 15px;
+    }
+
     .services {
         width: 90%;
         text-align: center;
@@ -2018,6 +2026,14 @@ div.tableau {
         justify-content:center;
         align-items: center;
         flex-wrap: wrap;
+    }
+
+    .noscreations {
+        flex-direction: column; /* Colonne sur petits écrans */
+    }
+
+    .creation {
+        margin-bottom: 15px; /* Ajuste l'espacement entre les images */
     }
 
     header img {
