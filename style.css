@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('https://fonts.gstatic.com/s/inter/v12/UcclYbaM5ml0Ne-mF1W-TtGxvB0XHZ07Lbx5jQTdn6s.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Liu Jian Mao Cao';
+  src: url('https://fonts.gstatic.com/s/liujiamaocao/v11/_pPsrJc3JjxZTt8I_gQzT2cuPwvX_cuvp7oM_w.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Livvic';
+  src: url('https://fonts.gstatic.com/s/livvic/v7/QZZ3Xx1aD3vVeGEXjBqR1ZGzzf_7ObgmHkRzGVs.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -12,8 +36,12 @@ body {
     align-items: center;
     width: 100%;
     background-color: #F9F5F0;
+    font-family: 'Inter', sans-serif;
 }
 
+h1 {
+  font-family: 'Livvic', sans-serif;
+}
 
 header {
     display: flex;
