@@ -313,7 +313,7 @@ section {
 
 /*adresse*/
 
-.adresse h2 {
+.adresse {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
