@@ -590,6 +590,87 @@ h2 {
     margin-top: 20px;
     margin-right: 40px;
 }
+/* presnentation Lise*/
+.banniere-lise{
+    height: 200px;
+    width: 1000px;
+    background-image: url('images/dessinban.png');
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+  }
+
+.banniere-lise h1{
+    color: #1676b2;
+    margin-top: 30px;
+    
+}
+.menulise {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.menulise a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+.lise-image {
+    height: 170px;
+    width: 180px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.menulise ul {
+    padding: 30px;
+    display: flex;
+    list-style-type: none;
+    gap: 100px;
+    margin-top: -25px;
+  }
+  
+  .menulise ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    position: relative;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+  }
+
+.menulise ul li a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #1676b2;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+  
+.menulise ul li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
 
 
 
@@ -1054,6 +1135,44 @@ h2 {
 .ava h1 {
     font-size: 24px;
     margin-top: 15px;
+}
+/* page lise */
+.nav-lise {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.nav-lise ul {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.banniere-lise {
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+}
+
+.menu-lise {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.menu-lise ul {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lise h2 {
+    font-size: 22px;
+    padding: 20px;
+    margin-top: 90px;
+}
+.lise h4 p {
+    font-size: 18px;
+    padding: 20px;
+    margin-top: 90px;
 }
 
 }
