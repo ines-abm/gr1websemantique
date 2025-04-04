@@ -554,7 +554,7 @@ section {
      font-size: 30px;
  }
 
-.nosfontaines, {
+.nosfontaines {
     padding: 10px;
     align-items: center;
     justify-content: center;
@@ -564,14 +564,14 @@ section {
     margin: 0 auto;
 }
 
-.fontainebloc1, .fontainebloc2,{
+.fontainebloc1, .fontainebloc2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
   }
 
-.fontaine img,{
+.fontaine img {
     width: 253px;
     padding: 5px;
     margin: 22.5px;
@@ -581,11 +581,11 @@ section {
     transition: transform 0.3s ease-in-out;
 }
 
-.fontaine img:hover,{
+.fontaine img:hover {
     transform: scale(1.1);
   }
 
-.conceptionexplication h2{
+.conceptionexplication h2 {
     font-size: 24px;
     font-weight: bold;
     text-align: left;
