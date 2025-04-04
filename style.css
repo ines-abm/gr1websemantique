@@ -486,7 +486,7 @@ section {
     height: auto;
 }
 
-.nosrealisations h3{ /*ajustementsous-titre des réalisations*/
+.nosrealisations h3{ 
     text-align: center;
     font-size: 18px;
     font-weight: normal;
@@ -515,7 +515,6 @@ section {
     display: flex;
     align-items: center;
     gap: 70px;
-
     margin-bottom: 50px;
 }
 
@@ -1645,7 +1644,6 @@ div.tableaux {
     padding-left: 50px;
 }
 /* Version TABLETTE */
-/*spécial page de présetation à checker*/
 @media (max-width: 1024px) {
     body {
         padding: 0 5%;
@@ -1816,7 +1814,7 @@ div.tableaux {
     .creationbloc1, .creationbloc2,
     .servicebloc1, .servicebloc2, .servicebloc3, .alletapefontaine {
         flex-direction: column;
-        align-items: center;
+        align-items: center; !important
     }
 
     .services {
@@ -2086,7 +2084,7 @@ div.tableaux {
 
     .creationbloc1, .creationbloc2 {
         flex-direction: column;
-        align-items: center;
+        align-items: center; !important
     }
 
     .allservices h3 {
