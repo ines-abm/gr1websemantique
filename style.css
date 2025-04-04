@@ -2082,9 +2082,9 @@ div.tableaux {
         height: auto;
     }
 
-    .creationbloc1, .creationbloc2 {
+    .noscreations {
         flex-direction: column;
-        align-items: center; !important
+        align-items: center; 
     }
 
     .allservices h3 {
@@ -2237,7 +2237,7 @@ div.tableaux {
     }
 
     .realisationbloc1, .realisationbloc2,
-    .creationbloc1, .creationbloc2 {
+    .noscreations {
         flex-direction: column;
         align-items: center;
     }
@@ -2369,7 +2369,7 @@ div.tableaux {
         line-height: 1.5;
     }
 
-    .bloc-etape {
+    .bloc-etape, .noscreations {
         flex-direction: column;
         align-items: center;
         justify-content: center;
