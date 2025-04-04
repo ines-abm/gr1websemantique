@@ -476,7 +476,7 @@ section {
     padding: 40px;
 }
 
-.banniere h1{
+.banniere h1, banniere-debroussaillage h1 {
     text-align: center;
     margin-top:40px;
     background-color: #66A766;
