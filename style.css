@@ -1740,10 +1740,9 @@ div.tableaux {
         margin: 0 auto;
     }
 
-    .realisationbloc1, .realisationbloc2,
-    .creationbloc1, .creationbloc2 {
-        flex-wrap: wrap;
-        justify-content: center;
+    .realisationbloc1, .realisationbloc2 {
+        flex-direction: column;
+        align-items: center;
     }
 
     .realisation img, .creation img {
@@ -1989,6 +1988,11 @@ div.tableaux {
         padding: 0 10px;
     }
 
+    .realisationbloc1, .realisationbloc2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .realisation img, .creation img {
         width: 180px;
         height: 180px;
@@ -2078,6 +2082,11 @@ div.tableaux {
         margin: 0 auto;
         max-width: 100%;
         height: auto;
+    }
+
+    .creationbloc1, .creationbloc2 {
+        flex-direction: column;
+        align-items: center;
     }
 
     .allservices h3 {
