@@ -4,7 +4,7 @@
     padding: 0px;
 }
 
-/* Style général pour le corps de la page */
+/* corps de page */
 body {
     display: flex;
     flex-direction: column;
@@ -80,7 +80,6 @@ section {
     transition: background-color 0.3s ease;
 }
 
-/* Effet au survol */
 .button:hover {
     background-color: rgba(255, 255, 255, 0.9);
 }
@@ -91,11 +90,9 @@ section {
     justify-content: center;
     justify-content: flex-start;
     gap: 30px;
-    /* Espace entre les liens */
     padding: 20px 0;
 }
 
-/* Styles pour chaque lien du menu */
 .nav a {
     display: flex;
     align-items: center;
@@ -379,7 +376,7 @@ section {
       font-family: Livvic;
     }
     
-    .form_style {
+.form_style {
         background-color: #66A766;
         border: none;
         margin: 15px;
@@ -391,17 +388,17 @@ section {
         font-size: 16px;
     }
     
-    textarea.form_style {
+.textarea.form_style {
         height: 100px;
         color: white !important;
         padding-top: 10px;
     }
 
-    .form_style::placeholder {
+.form_style::placeholder {
         color: rgba(255, 255, 255, 0.7);
     }
     
-    .btn {
+.btn {
         background-color: #66A766;
         border: none;
         margin: 15px;
@@ -413,7 +410,7 @@ section {
         cursor: pointer;
     }
     
-    .btn:hover {
+.btn:hover {
         background-color: #559155;
     }
 
@@ -448,7 +445,6 @@ section {
 }
 
 /*page de service création, fontaine, et galerie page de réalisation*/
-/*up*/
 
 .banniere {
     width: 100vw;
@@ -884,11 +880,8 @@ section {
     padding: 10px 20px;
     font-size: 20px;
     color: black;
-    /* Couleur du texte */
     background-color: rgba(255, 255, 255, 0.6);
-    /* Fond semi-transparent */
     font-family: Arial, sans-serif;
-    /* Police de caractères */
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -912,7 +905,6 @@ section {
     width: 100%;
     display: block;
     margin: 0 auto;
-    /* Centre l'image */
 }
 
 .texte-sous-image{
@@ -946,10 +938,8 @@ div.tableau {
     cursor: pointer;
     width: 100%;
     height: 100%;
-    /* Hauteur fixe pour toutes les images */
     object-fit: cover;
     background-size: cover;
-    /* Adapte l'image pour qu'elle remplisse le conteneur sans distorsion */
     display: flex;
     justify-content: center;
     align-items: end;
@@ -960,10 +950,8 @@ div.tableau {
     cursor: pointer;
     width: 100%;
     height: 100%;
-    /* Hauteur fixe pour toutes les images */
     object-fit: cover;
     background-size: cover;
-    /* Adapte l'image pour qu'elle remplisse le conteneur sans distorsion */
     display: flex;
     justify-content: center;
     align-items: end;
@@ -1041,7 +1029,7 @@ div.tableau {
 }
 
 .container {
-    background-color: #a8d8a8; /* Light green background */
+    background-color: #a8d8a8;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -1099,9 +1087,6 @@ div.tableau {
     gap: 50px;
 }
 
-
-
-
 .tableaux:hover .fruits-details {
     display: flex;
 }
@@ -1157,11 +1142,6 @@ div.tableau {
 }
 
 
-
-
-
-
-
 /* Service traitement palmiers*/
 
 .traitement-palmiers h1 {
@@ -1197,11 +1177,11 @@ div.tableau {
 }
   
 .insecte-image, .papillon-image {
-    height: 200px; /* Ajustez la hauteur selon vos besoins */
-    background-color: #f0f0f0; /* Couleur de fond par défaut */
+    height: 200px;
+    background-color: #f0f0f0;
     margin-bottom: 20px;
     display: flex;
-    font-size: 1.5em; /* Taille de police pour le texte de remplacement */
+    font-size: 1.5em;
 }
   
 .palmier-image {
@@ -1264,7 +1244,7 @@ div.tableau {
 .insecte-image {
     width: 200px;
     height: 300px;
-    background-image: url('images/insecte1.jpeg'); /* Remplacez par le chemin de votre image */
+    background-image: url('images/insecte1.jpeg');
     background-size: cover;
     background-position: center;
 }
@@ -1294,7 +1274,7 @@ div.tableau {
 .papillon-image {
     width: 200px;
     height: 300px;
-    background-image: url('images/insecte2.jpg'); /* Remplacez par le chemin de votre image */
+    background-image: url('images/insecte2.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -1346,7 +1326,6 @@ div.tableau {
  padding: 90px;
  padding-top: 90px;
 }
-/*taille et placement image*/
 
 .image-coupe{
     flex: 1;
@@ -1386,10 +1365,10 @@ div.tableau {
 }
 
 .arbres-image, .homme-image, .tronc-image {
-    height: 200px; /* Ajustez la hauteur selon vos besoins */
+    height: 200px;
     margin-bottom: 40px;
     display: flex;
-    font-size: 1.5em; /* Taille de police pour le texte de remplacement */
+    font-size: 1.5em;
 }
   
 .arbres-container div, .homme-container div, .tronc-container{
@@ -1494,11 +1473,8 @@ div.tableau {
     padding: 10px 20px;
     font-size: 20px;
     color: black;
-    /* Couleur du texte */
     background-color: rgba(255, 255, 255, 0.6);
-    /* Fond semi-transparent */
-    font-family: Arial, sans-serif;
-    /* Police de caractères */
+    font-family: Inter, sans-serif;
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -1577,11 +1553,11 @@ div.tableau {
 }
 
 .goutte-image, .sprinkler-image, .aspersion-image, .tuyaux-image {
-    height: 200px; /* Ajustez la hauteur selon vos besoins */
+    height: 200px;
    
     margin-bottom: 40px;
     display: flex;
-    font-size: 1.5em; /* Taille de police pour le texte de remplacement */
+    font-size: 1.5em;
 }
   
 .goutte-container div, .sprinkler-container div, .aspersion-container, .tuyaux-container{
