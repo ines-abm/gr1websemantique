@@ -2074,7 +2074,7 @@ div.tableaux {
 
     /* ajustement pour la page de service fontaine*/
 
-    .banniere {
+    .banniere, .banniere-debroussaillage {
         margin-top: 70px;
         width: auto;
         max-width: fit-content;
