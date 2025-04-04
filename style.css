@@ -1956,6 +1956,11 @@ div.tableau {
         align-items: center;
     }
 
+    .creation {
+        flex: 1 1 100%;
+        max-width: 300px;
+    }
+
     .realisation img, .creation img {
         width: 180px;
         height: 180px;
@@ -2018,12 +2023,7 @@ div.tableau {
     .explicationcreation, .explicationfontaine img{
         flex-direction: column;
         text-align: center;
-    }
-
-    .creationbloc1, .creationbloc2,
-    .realisationbloc1, .realisationbloc2 {
-        flex-direction: column;
-        justify-content:center;
+        margin-top: 15px;
     }
 
     header img {
