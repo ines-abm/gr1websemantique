@@ -2292,6 +2292,16 @@ div.tableaux {
     margin-right: 120px;
 
 }
+
+/*page de fruits*/
+    .fruit-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .fruit-card {
+    padding: 15px;
+  }
+    
 /*page systeme d'arrosage*/
 .explication {
     flex-direction: column;
