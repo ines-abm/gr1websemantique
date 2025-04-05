@@ -2357,6 +2357,40 @@ div.tableaux {
         .nossystemes img{
             margin-left: 110px;
         }
+    /*en plus*/
+    .image-systeme img {
+    max-width: 100%;
+  }
+
+  .explication {
+    flex-direction: column;
+  }
+
+  .systeme {
+    flex: 1 1 100%;
+  }
+
+  .goutte-container, .sprinkler-container, .aspersion-container, .tuyaux-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .goutte-image, .sprinkler-image, .aspersion-image, .tuyaux-image {
+    flex: 1 1 100%;
+  }
+
+  .paragraphe {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  #texte-intro p {
+    font-size: 1rem;
+  }
+
+  .texte-type ul {
+    font-size: 0.9rem;
+  }
 }
 
 /* PETITS TELS*/
