@@ -2309,54 +2309,53 @@ div.tableaux {
     margin-right: 0;
 
     }
-    .systeme{
-        padding: 10px;
-       padding-bottom: 10px;
+.systeme{
+    padding: 10px;
+    padding-bottom: 10px;
     }
-    .image-systeme img{
-        padding: 0px;
-        width: 400px;
-        height: 500px;
-        margin-top: -700px;
-        margin-bottom: 20px;
+.image-systeme img{
+    padding: 0px;
+    width: 400px;
+    height: 500px;
+    margin-top: -700px;
+    margin-bottom: 20px;
 
     }
-   
-   .texte-type{ 
-     padding: 20px;
-     padding-top: 700px;
-     font-size: 18px;
-     margin-right: 70px;
-     margin-left: -100px;
-        }
-        .nossystemes {
-            margin-left: 0;
-            text-align: center;
-        }
+.texte-type{ 
+    padding: 20px;
+    padding-top: 700px;
+    font-size: 18px;
+    margin-right: 70px;
+    margin-left: -100px;
+    }
+.nossystemes {
+    margin-left: 0;
+    text-align: center;
+  }
     
-        .nossystemes h2 {
-            margin-right: 0;
-            padding-bottom: 30px;
-        }
+.nossystemes h2 {
+    margin-right: 0;
+    padding-bottom: 30px;
+}
     
-        .goutte-container,
-        .sprinkler-container,
-        .aspersion-container,
-        .tuyaux-container {
-            width: 100%;
-            flex-direction: column;
-            gap: 30px;
-        }
+.goutte-container,
+.sprinkler-container,
+.aspersion-container,
+.tuyaux-container {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+ }
     
-        .goutte-container div,
-        .sprinkler-container div,
-        .aspersion-container div,
-        .tuyaux-container div {
-            width: 100%;
-        }
-        .nossystemes img{
-            margin-left: 110px;
-        }
+.goutte-container div,
+.sprinkler-container div,
+.aspersion-container div,
+.tuyaux-container div {
+    width: 100%;
+ }
+.nossystemes img{
+    margin-left: 110px;
+}
 }
 
 /* PETITS TELS*/
