@@ -2214,9 +2214,9 @@ div.tableaux {
     margin-right: 0;
 
     }
-    .coupe{
-        padding: 10px;
-       padding-bottom: 10px;
+   .coupe{
+    padding: 10px;
+    padding-bottom: 10px;
     }
     .image-coupe img{
         padding: 0px;
@@ -2250,15 +2250,15 @@ div.tableaux {
     padding-top: 400px;
     font-size: 18px;
     margin-right: -80px;
-}
-.arbres-image{
+   }
+   .arbres-image{
     padding: 0px;
     margin-top: -900px;
     margin-bottom: 20px;
     padding-left: 80px;
 
-}
-.tronc-container .paragraphe {
+  }
+   .tronc-container .paragraphe {
     padding: 10px;
     padding-right: 150px;
     
@@ -2266,16 +2266,16 @@ div.tableaux {
     padding-top: 400px;
     font-size: 18px;
     margin-right: 20px;
-}
-.tronc-image{
+  }
+  .tronc-image{
     padding: 0px;
     margin-top: -900px;
     margin-bottom: 20px;
     padding-left: 80px;
     margin-left: 180px;
 
-}
-.homme-container .paragraphe {
+  }
+  .homme-container .paragraphe {
     padding: 10px;
     padding-left: 60px;
    
