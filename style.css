@@ -1774,6 +1774,25 @@ div.tableaux {
         margin: 0 auto;
     }
 
+    .palmier-container{
+        flex-direction: column;
+    }
+
+    .insecte-container div, .papillon-container div{
+        width: 100%;
+    }
+
+    .insecte-container, .papillon-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .insecte-image{
+        width: 100%;
+    }
+
     /*Page de FAq*/
     .topfaq{
         margin-top: 60px;
