@@ -1604,12 +1604,12 @@ div.tableaux {
     margin-bottom: 80px;
     margin-right: 5%;
    }
-   .systeme img{
+.systeme img{
     width: 450px;
     height: 650px;
    }
    
-   .texte-type{
+.texte-type{
     flex: 2;
     padding: 10px;
     margin-right: 80px;
